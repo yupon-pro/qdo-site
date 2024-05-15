@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+【サイトマップ】
+・HOME 
 
-## Getting Started
+・ABOUT
+- QDO
+- Q dai
+- Fukuoka city
 
-First, run the development server:
+・Tournament
+- Registration
+- Time Schedule
+- Visit
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+・Staff List
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+・Partner
+- Supporters
+- Sponsors
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+・Contact
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+【基本方針】
+・できるだけリッチにする。
 
-## Learn More
+【UI】
+・HOME
+- オープニングアニメーション
+- スワイパー（写真が何枚かあって横にスライドしていくやつ）
 
-To learn more about Next.js, take a look at the following resources:
+・ページ共通
+- スクロールに応じたフェードイン
+- ヘッダー：他ページへのリンク
+- フッター：他ページへのリンクと、SNS等のリンク
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+【技術スタック】
+・Next.js（フロントエンド用のJavaScriptライブラリー）
+・Tailwindcss（レイアウト用）
+・Swiper （スライド用）
+場合によって追加
+・MUI
+・Framer Motion（アニメーション用）
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
