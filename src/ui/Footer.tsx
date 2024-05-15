@@ -1,8 +1,9 @@
 import { Facebook, Instagram, X, Chat } from "@mui/icons-material";
-import { Box, Container, IconButton, List, ListItem, ListItemText, SvgIcon, Typography } from "@mui/material";
+import { Box, Button, Container, IconButton, List, ListItem, ListItemText, SvgIcon, Typography } from "@mui/material";
 import { FooterTooltip } from "./Component/CustomMui/FooterTooltip";
 // import Line from "../../public/logo/line-logo.svg";
 import Link from "next/link";
+import { hoverUnderline } from "./Component/Props";
 
 const nav = ["About", "Staff", "Partners", "Tournament", "Contact"];
 
@@ -12,41 +13,30 @@ export default function Footer() {
       maxWidth={false}
       sx={{
         backgroundColor: "seagreen",
-        minHeight: "125px",
+        minHeight: "150px",
         width: "100%",
         margin: "0",
         display: "flex",
+        flexDirection: "column",
         justifyContent: { xs: "space-between", sm: "space-around" },
         alignItems: "center",
       }}
     >
-      <Box sx={{ width: "50%" }}>
-        <List>
-          {nav.map((page) => (
-            <ListItem key={page} sx={{ paddingY: "4px" }}>
-              <Link href={`/${page.toLowerCase()}`}>
-                <ListItemText
-                  primary={page.toUpperCase()}
-                  sx={{
-                    "::after": {
-                      position: "absolute",
-                      left: "0",
-                      content: "''",
-                      width: "150px",
-                      height: "2px",
-                      backgroundColor: "black",
-                      bottom: "0",
-                      transform: "scale(0,1)",
-                      transformOrigin: "left top",
-                      transition: "0.5s",
-                    },
-                    ":hover::after": { transform: "scale(1,1)" },
-                  }}
-                />
-              </Link>
-            </ListItem>
-          ))}
-        </List>
+      <Box sx={{ width: "70%", display:"flex", justifyContent:"center"  }}>
+        {nav.map((page) => (
+          <Link key={page} href={`/${page.toLowerCase()}`} className="px-4">
+            <Button
+              sx={{
+                ":hover": { backgroundColor:"rgba(50,205,50,0.5)" },
+                backgroundColor:"inherit",
+                transition: "background-color 700ms linear",
+                color: "black"
+              }}
+            >
+              {page}
+            </Button>
+          </Link>
+        ))}
       </Box>
       <Box sx={{ display: "flex", flexDirection: "column", minHeight: "50%", minWidth: "25%" }}>
         <Box sx={{ display: "flex", justifyContent: "space-evenly" }}>

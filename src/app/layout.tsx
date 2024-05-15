@@ -4,6 +4,7 @@ import Header from "@/ui/Header";
 import type { Metadata } from "next";
 import { Box } from "@mui/material";
 import "./globals.css";
+import SubNav from "@/ui/SubNav";
 // このglobals.cssがtailwindcssのスタイリング提供になっているので、
 // これは外してはダメ！
 
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body>
         <ProgressBar />
         <Header />
+        <SubNav />
         <Box component="main" minHeight="80vh">
           {children}
         </Box>

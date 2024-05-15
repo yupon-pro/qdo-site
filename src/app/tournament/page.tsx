@@ -37,7 +37,7 @@ function Item({ route }: { route: Route }) {
     <Box sx={{ display: "flex", flexDirection: "column" }}>
       <Link href={`/tournament/${route.nav.toLowerCase()}`}>
         <Box sx={{ position: "relative", height: "50vh", width: "350px" }}>
-          <Image src={`/tournament/${route.image}.jpeg`} fill objectFit="cover" alt="schedule" />
+          <Image src={`/tournament/${route.image}.jpeg`} fill style={{ objectFit: "cover" }} alt="schedule" />
         </Box>
         <Typography align="center" variant="h4">
           {route.nav}
