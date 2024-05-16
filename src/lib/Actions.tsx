@@ -1,10 +1,11 @@
 "use server";
 
+import { redirect } from "next/navigation";
 import { FormFields, FormState } from "./Definition";
 import { FormScheme } from "./Scheme";
 import nodemailer from "nodemailer";
 
-async function formAction(prevState: FormState, formData: FormData) {
+export async function formAction(prevState: FormState, formData: FormData) {
   const safeParsedField = FormScheme.safeParse({
     name: formData.get("name"),
     email: formData.get("email"),
@@ -22,10 +23,11 @@ async function formAction(prevState: FormState, formData: FormData) {
     const message = await sendGmail(safeParsedField.data);
     if (message) return { message };
 
-    return {};
   } catch (error) {
     return error instanceof Error ? { message: error.message } : { message: "Something went wrong." };
   }
+
+  redirect("/contact");
 }
 
 async function sendGmail(contact: { [Key in FormFields]: string }): Promise<string | undefined> {
@@ -79,7 +81,6 @@ async function sendGmail(contact: { [Key in FormFields]: string }): Promise<stri
   }
 }
 
-export { formAction };
 
 // Error:
 //   × Server actions must be async functions

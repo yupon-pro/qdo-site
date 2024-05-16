@@ -20,11 +20,21 @@ import {
 } from "@mui/material";
 import Link from "next/link";
 import { hoverUnderline } from "./Component/Props";
+import { useNavHeight } from "./ContextProvider";
 
 const drawerWidth = 200;
 const navItems = ["About", "Staff", "Partners", "Tournament", "Contact"];
 
 export default function DrawerAppBar() {
+  const ref = React.useRef<HTMLHeadElement>(null);
+  const { navHeight, setNavHeight } = useNavHeight();
+
+  React.useEffect(() => {
+    const height = ref.current?.offsetHeight;
+    console.log(height);
+    setNavHeight(prev => height ?  height : prev);
+  },[])
+
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
@@ -56,7 +66,7 @@ export default function DrawerAppBar() {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar component="nav">
+      <AppBar component="nav" ref={ref} >
         <Toolbar>
           <IconButton
             color="inherit"

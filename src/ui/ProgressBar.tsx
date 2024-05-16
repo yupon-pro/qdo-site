@@ -10,7 +10,7 @@ export default function ProgressBar() {
     <motion.div
       style={{
         width: "100%",
-        height: 5,
+        height: "5px",
         backgroundColor: "lightblue",
         position: "fixed",
         top: 0,

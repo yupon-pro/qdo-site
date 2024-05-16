@@ -43,7 +43,7 @@ export default function FormItems({ inputType }: { inputType: FormFields }) {
         variant="filled"
         type={inputType === "email" ? "email" : "text"}
         aria-describedby={`${inputType}-error`}
-        inputProps={inputType === "content" ? { maxLength: 2000, minLength: 5 } : undefined}
+        inputProps={inputType === "content" ? { maxLength: 2000, minLength: 10 } : undefined}
         required
       />
     </Box>

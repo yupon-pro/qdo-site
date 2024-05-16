@@ -9,7 +9,7 @@ import FormItemsError from "../Component/Form/ItemError";
 
 export default function Form() {
   const formFields: FormFields[] = ["name", "email", "content"] as const;
-  const initialState = { errors: undefined, message: undefined };
+  const initialState = { errors: undefined, message: "" };
   const [state, dispatcher] = useFormState(formAction, initialState);
 
   return (

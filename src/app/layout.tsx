@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import { Box } from "@mui/material";
 import "./globals.css";
 import SubNav from "@/ui/SubNav";
+import { ContextProvider } from "@/ui/ContextProvider";
 // このglobals.cssがtailwindcssのスタイリング提供になっているので、
 // これは外してはダメ！
 
@@ -22,13 +23,15 @@ export default function RootLayout({
   return (
     <html>
       <body>
-        <ProgressBar />
-        <Header />
-        <SubNav />
-        <Box component="main" minHeight="80vh">
-          {children}
-        </Box>
-        <Footer />
+        <ContextProvider>
+          <ProgressBar />
+          <Header />
+          <SubNav />
+          <Box component="main" minHeight="80vh">
+            {children}
+          </Box>
+          <Footer />
+        </ContextProvider>
       </body>
     </html>
   );
