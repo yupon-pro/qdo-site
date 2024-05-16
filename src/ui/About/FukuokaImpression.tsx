@@ -49,11 +49,10 @@ const images = [
   { title: "柳川川下り", url: YanagawaRiverCruise },
 ];
 
-
-export default function FukuokaImpression(){
+export default function FukuokaImpression() {
   const matches = useMediaQuery("(max-width:600px)");
 
-  return(
+  return (
     <Fragment>
       <Box justifyContent="center">
         <Box>

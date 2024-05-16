@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 export const FormScheme = z.object({
-  name: z.string().min(4,{ message: "Please print your name at least 4 letters" }),
+  name: z.string().min(4, { message: "Please print your name at least 4 letters" }),
   email: z.string().email({ message: "Please print valid email address." }),
   content: z
     .string()

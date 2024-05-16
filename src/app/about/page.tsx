@@ -11,7 +11,6 @@ const LibreBaskerville = Libre_Baskerville({
 });
 
 export default function Home() {
-
   return (
     <Box>
       <Container
@@ -34,7 +33,7 @@ export default function Home() {
             <Box width="100%" sx={{ display: "flex", justifyContent: "left", paddingLeft: 3 }}>
               <Typography
                 className={LibreBaskerville.className}
-                sx={{ fontSize: { xs: "2rem", sm:"3rem", md: "4rem" } }}
+                sx={{ fontSize: { xs: "2rem", sm: "3rem", md: "4rem" } }}
                 color="black"
               >
                 {" "}
@@ -44,7 +43,7 @@ export default function Home() {
             <Box width="100%" sx={{ display: "flex", justifyContent: "right", paddingRight: 3 }}>
               <Typography
                 className={LibreBaskerville.className}
-                sx={{ fontSize: { xs: "2rem", sm:"3rem", md: "4rem" } }}
+                sx={{ fontSize: { xs: "2rem", sm: "3rem", md: "4rem" } }}
                 color="black"
               >
                 {" "}

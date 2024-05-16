@@ -18,24 +18,24 @@ import speeching from "../../../public/gallery/speeching.jpeg";
 import lectureroom from "../../../public/gallery/lectureroom.jpeg";
 
 const images = [
-  {title:"selfphoto", url: selfphoto ,featured:true },
-  {title:"stairs", url:stairs, },
-  {title:"awards",url:awards, },
-  {title:"holdingpaper",url:holdingpaper, featured:true },
-  {title:"judgeback",url:judgeback, },
-  {title:"strongspeech",url:strongspeech, },
-  {title:"onsofa", url:onsofa,featured:true },
-  {title:"relax", url:relax,},
-  {title:"preparation", url:preparation, },
-  {title:"coaches", url:coaches, featured:true },
-  {title:"speeching", url:speeching,},
-  {title:"lectureroom", url:lectureroom,},
+  { title: "selfphoto", url: selfphoto, featured: true },
+  { title: "stairs", url: stairs },
+  { title: "awards", url: awards },
+  { title: "holdingpaper", url: holdingpaper, featured: true },
+  { title: "judgeback", url: judgeback },
+  { title: "strongspeech", url: strongspeech },
+  { title: "onsofa", url: onsofa, featured: true },
+  { title: "relax", url: relax },
+  { title: "preparation", url: preparation },
+  { title: "coaches", url: coaches, featured: true },
+  { title: "speeching", url: speeching },
+  { title: "lectureroom", url: lectureroom },
 ];
 
-export default function QDOGallery(){
+export default function QDOGallery() {
   const matches = useMediaQuery("(max-width:600px)");
 
-  return(
+  return (
     <Fragment>
       <Box justifyContent="center">
         <Box>
@@ -54,7 +54,7 @@ export default function QDOGallery(){
         cols={matches ? 1 : 2}
       >
         {images.map((image) => (
-          <ImageListItem key={image.title} cols={matches ? 1 : image.featured ? 2 : 1} >
+          <ImageListItem key={image.title} cols={matches ? 1 : image.featured ? 2 : 1}>
             <PhotoDialog image={{ title: image.title, url: image.url }} />
           </ImageListItem>
         ))}

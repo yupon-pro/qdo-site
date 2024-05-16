@@ -36,7 +36,7 @@ function Item({ route }: { route: Route }) {
   return (
     <Box sx={{ display: "flex", flexDirection: "column" }}>
       <Link href={`/tournament/${route.nav.toLowerCase()}`}>
-        <Box sx={{ position: "relative", height: {xs:"40vh", sm:"50vh"}, width:{xs:"300px", sm:"350px"} }}>
+        <Box sx={{ position: "relative", height: { xs: "40vh", sm: "50vh" }, width: { xs: "300px", sm: "350px" } }}>
           <Image
             src={`/tournament/${route.image}.jpeg`}
             loading="lazy"
@@ -47,7 +47,7 @@ function Item({ route }: { route: Route }) {
             alt="schedule"
           />
         </Box>
-        <Typography align="center" variant="h4" sx={{ paddingTop:2 }} >
+        <Typography align="center" variant="h4" sx={{ paddingTop: 2 }}>
           {route.nav}
         </Typography>
         {route.description && (

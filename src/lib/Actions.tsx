@@ -22,7 +22,6 @@ export async function formAction(prevState: FormState, formData: FormData) {
   try {
     const message = await sendGmail(safeParsedField.data);
     if (message) return { message };
-
   } catch (error) {
     return error instanceof Error ? { message: error.message } : { message: "Something went wrong." };
   }
@@ -80,7 +79,6 @@ async function sendGmail(contact: { [Key in FormFields]: string }): Promise<stri
     return "Failed to send Gmail.";
   }
 }
-
 
 // Error:
 //   × Server actions must be async functions

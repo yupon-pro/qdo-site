@@ -6,7 +6,6 @@ import { Box, Container, ImageList, ImageListItem, Stack, Typography, useMediaQu
 import { Fragment } from "react";
 
 export default function Home() {
-
   return (
     <Fragment>
       <Container

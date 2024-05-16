@@ -32,8 +32,8 @@ export default function DrawerAppBar() {
   React.useEffect(() => {
     const height = ref.current?.offsetHeight;
     console.log(height);
-    setNavHeight(prev => height ?  height : prev);
-  },[])
+    setNavHeight((prev) => (height ? height : prev));
+  }, []);
 
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -66,7 +66,7 @@ export default function DrawerAppBar() {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar component="nav" ref={ref} >
+      <AppBar component="nav" ref={ref}>
         <Toolbar>
           <IconButton
             color="inherit"

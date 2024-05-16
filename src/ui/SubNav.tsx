@@ -18,7 +18,7 @@ const tournamentPages: [string, string][] = ["Registration", "Visit", "Schedule"
 ]);
 
 export default function SubNav() {
-  const {navHeight} = useNavHeight();
+  const { navHeight } = useNavHeight();
   const pathname = usePathname();
   const flagAboutPage = pathname.includes("about");
   const flagTournamentPage = pathname.includes("tournament");
@@ -27,7 +27,17 @@ export default function SubNav() {
   if (pages == undefined) return null;
 
   return (
-    <Box sx={{position:"sticky", top:`${navHeight}px` ,width:"100%", zIndex:10, display: "flex", justifyContent: "center", backgroundColor: "gray" }}>
+    <Box
+      sx={{
+        position: "sticky",
+        top: `${navHeight}px`,
+        width: "100%",
+        zIndex: 10,
+        display: "flex",
+        justifyContent: "center",
+        backgroundColor: "gray",
+      }}
+    >
       {pages.map((page, index) => (
         <Link key={index} href={`/${flagAboutPage ? "about" : "tournament"}/${page[1]}`}>
           <Button sx={{ ...hoverUnderline, color: "#fff" }}>{page[0]}</Button>

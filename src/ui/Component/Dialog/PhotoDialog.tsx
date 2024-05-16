@@ -27,7 +27,7 @@ export default function PhotoDialog({ image }: { image: { title: string; url: st
       >
         <Image
           src={image.url}
-          blurDataURL={ typeof image.url === "string" ? image.url : undefined }
+          blurDataURL={typeof image.url === "string" ? image.url : undefined}
           placeholder="blur"
           fill
           style={{ objectFit: "cover" }}
@@ -37,7 +37,14 @@ export default function PhotoDialog({ image }: { image: { title: string; url: st
         />
       </Box>
       <Dialog open={open} onClose={handleClose}>
-        <Image src={image.url} blurDataURL={typeof image.url === "string" ? image.url : undefined} placeholder="blur" alt={image.title} height={450} width={450} />
+        <Image
+          src={image.url}
+          blurDataURL={typeof image.url === "string" ? image.url : undefined}
+          placeholder="blur"
+          alt={image.title}
+          height={450}
+          width={450}
+        />
       </Dialog>
     </React.Fragment>
   );
