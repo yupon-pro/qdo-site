@@ -22,6 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html>
+      <head>
+        <meta name="google-site-verification" content="_TyL-pvXZgYIY7v7S07182dPzNKGGgTSm3RXT1LGyEc" />
+      </head>
       <body>
         <ContextProvider>
           <ProgressBar />
