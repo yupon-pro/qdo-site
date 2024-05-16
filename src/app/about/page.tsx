@@ -1,3 +1,4 @@
+import BodySubtitle from "@/ui/Component/CustomMui/BodySubtitle";
 import BodyTypography from "@/ui/Component/CustomMui/BodyTypography";
 import { Box, Container, Stack, Typography } from "@mui/material";
 import { Libre_Baskerville } from "next/font/google";
@@ -14,7 +15,7 @@ export default function Home() {
       <Container
         maxWidth={false}
         sx={{
-          backgroundImage: "url('/photos/speech.JPG')",
+          backgroundImage: "url('/photos/speech.jpeg')",
           backgroundSize: "100%",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -52,10 +53,9 @@ export default function Home() {
         </Box>
       </Container>
       <Stack alignItems="center" spacing={5} sx={{ marginY: "2rem" }}>
-        <Box>
-          <Typography variant="h3"> Kyushu Debate Open </Typography>
-        </Box>
+        <Typography sx={{ typography: { xs: "h4", sm: "h3" } }}> Kyushu Debate Open </Typography>
         <Box sx={{ width: { xs: "75%", sm: "60%" } }}>
+          <BodySubtitle>Circumstances</BodySubtitle>
           <BodyTypography>
             The Kyushu Debate Open (QDO) was initially conceived as an inclusive event for the geographically isolated
             Kyushu region, aiming to provide access to major competitions. With the aspiration for international
@@ -72,17 +72,18 @@ export default function Home() {
             impact extends to various stakeholders such as Kyushu University, Fukuoka Prefecture, and the wider regional
             society.
           </BodyTypography>
+          <BodySubtitle boxSx={{ marginY: 3 }}>No Lecture & No Online</BodySubtitle>
           <BodyTypography>
             This is for the first time in 4 years, and most members of the committee don{"'"}t have experience to
-            operate this event, so there are some changes. In past, this event run for 3 days. At the first day, there
-            was a lecture conveying tips of thinking and debating. However, we decided not to hold this lecture because
-            it is hard to set up. It is tough to make all the arrangement such as asking for lecturers and preparing
-            lecture materials in addition to the competition. If you were looking forward to this lecture, sorry to
-            failed to up your expectation.
+            operate this event, so there are some changes. In the past, this event ran for 3 days. On the first day,
+            there was a lecture conveying tips of thinking and debating. However, we decided not to hold this lecture
+            because it is hard to set up. It is tough to make all the arrangements such as asking for lecturers and
+            preparing lecture materials in addition to the competition. If you were looking forward to this lecture,
+            sorry for failing to up your expectations.
           </BodyTypography>
           <BodyTypography>
-            You may think that because online tournaments have been prevalent while the corona virus crisis, this event
-            also combine online and offline. However, it is difficult to include the online teams because they need an
+            You may think that because online tournaments have been prevalent during the corona virus crisis, this event
+            also combines online and offline. However, it is difficult to include the online teams because they need
             additional consideration. Sorry to limit the accessibility to this event.
           </BodyTypography>
         </Box>

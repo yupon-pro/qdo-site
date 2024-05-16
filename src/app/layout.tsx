@@ -10,7 +10,8 @@ import SubNav from "@/ui/SubNav";
 
 export const metadata: Metadata = {
   title: "QDO 2024",
-  description: "We announce that the Kyushu Debate Open(QDO) resumes this year. We constructed a special website for this resume of the event.",
+  description:
+    "We announce that the Kyushu Debate Open(QDO) resumes this year. We constructed a special website for this resume of the event.",
 };
 
 export default function RootLayout({

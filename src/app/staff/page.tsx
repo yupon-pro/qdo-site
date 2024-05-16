@@ -1,21 +1,25 @@
 import { Staff } from "@/lib/Definition";
 import StaffCard from "@/ui/Component/Card/StaffCard";
 import FadeIn from "@/ui/Component/FadeIn";
-import { Container, Grid, Stack, Typography } from "@mui/material";
+import { Box, Container, Grid, ImageList, ImageListItem, Stack, Typography } from "@mui/material";
 import { Fragment } from "react";
 
 export default function Home() {
   const staff = [
     { name: "Reona Ishizuka", role: "TD" },
     { name: "Hina Namisaki", role: "VTD" },
-    { name: "Mami Matsuse", role: "DCA" },
+    { name: "Mami Matsuse", role: "AC" },
+    { name: "Minami Matsushimar", role: "AC" },
     { name: "Atsuhiro Nishiyama", role: "CD" },
     { name: "Keigo Kawabata", role: "CD・MD" },
     { name: "Karin Minowa", role: "TC・MD" },
+    { name: "Ibuki Okamura", role: "TC" },
     { name: "Arata Shimabukuro", role: "FD" },
-    { name: "木村", role: "FD" },
+    { name: "Keisuke Kino", role: "FD" },
     { name: "Natsuki Horita", role: "ST" },
     { name: "Arisa Imamura", role: "ST" },
+    { name: "Toru Oga", role: "ST" },
+    { name: "Sora Nishimura", role: "Tab" },
   ];
 
   const staffList: Staff[] = staff.map((staff) => {

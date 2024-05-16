@@ -26,7 +26,9 @@ export default function PhotoDialog({ image }: { image: { title: string; url: st
         }}
       >
         <Image
-          src={`/thirdparty/fukuoka/${image.title}.jpg`}
+          src={image.url}
+          blurDataURL={image.url}
+          placeholder="blur"
           fill
           style={{ objectFit: "cover" }}
           alt={image.title}
@@ -35,7 +37,7 @@ export default function PhotoDialog({ image }: { image: { title: string; url: st
         />
       </Box>
       <Dialog open={open} onClose={handleClose}>
-        <Image src={image.url} alt={image.title} height={450} width={450} />
+        <Image src={image.url} blurDataURL={image.url} placeholder="blur" alt={image.title} height={450} width={450} />
       </Dialog>
     </React.Fragment>
   );

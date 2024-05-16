@@ -11,7 +11,10 @@ const aboutPages: [string, string][] = [
   ["Fukuoka", "fukuoka"],
 ];
 
-const tournamentPages: [string, string][] = ["Registration", "Visit", "Schedule"].map((page) => [page, page.toLowerCase()]);
+const tournamentPages: [string, string][] = ["Registration", "Visit", "Schedule"].map((page) => [
+  page,
+  page.toLowerCase(),
+]);
 
 export default function SubNav() {
   const pathname = usePathname();
@@ -19,7 +22,7 @@ export default function SubNav() {
   const flagTournamentPage = pathname.includes("tournament");
   const pages = flagAboutPage ? aboutPages : flagTournamentPage ? tournamentPages : undefined;
 
-  if( pages == undefined ) return null;
+  if (pages == undefined) return null;
 
   return (
     <Box sx={{ display: "flex", justifyContent: "center", backgroundColor: "gray" }}>

@@ -2,8 +2,10 @@ import ArrowButton from "@/ui/Component/CustomMui/ArrowButton";
 import BodyTypography from "@/ui/Component/CustomMui/BodyTypography";
 import HomeSlider from "@/ui/Component/Slider";
 import { Box, Container, Stack, Typography } from "@mui/material";
-import Image from "next/image";
 import { Fragment } from "react";
+import Image from "next/image";
+import sapling from "../../public/photos/sapling.jpeg";
+import funny from "../../public/photos/funny.jpeg";
 
 export default function Home() {
   return (
@@ -19,7 +21,7 @@ export default function Home() {
             flexDirection: { xs: "column", md: "row-reverse" },
           }}
         >
-          <Image src="/photos/sapling.jpeg" height={300} width={300} alt="revival" />
+          <Image src={sapling} height={300} width={300} alt="revival" placeholder="blur" loading="lazy" />
           <Box maxWidth={{ xs: "75%", md: "50%" }} sx={{ paddingY: 2 }}>
             <Typography variant="h4" align="center">
               Restart
@@ -44,7 +46,7 @@ export default function Home() {
             flexDirection: { xs: "column", md: "row" },
           }}
         >
-          <Image src="/photos/funny.JPG" height={300} width={300} alt="qdo" />
+          <Image src={funny} height={300} width={300} alt="qdo" placeholder="blur" loading="lazy" />
           <Box maxWidth={{ xs: "75%", md: "50%" }} sx={{ paddingY: 2 }}>
             <Typography variant="h4" align="center">
               What is QDO?

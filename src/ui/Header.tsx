@@ -69,7 +69,7 @@ export default function DrawerAppBar() {
           </IconButton>
 
           <Link href="/">
-            <Avatar src="/logo/qdo-logo.jpg" alt="qdo" sx={{ width: 24, height: 24, opacity: "0.9" }} />
+            <Avatar src="/logo/qdo-logo.jpeg" alt="qdo" sx={{ width: 24, height: 24, opacity: "0.9" }} />
           </Link>
           <Box sx={{ flexGrow: 1, marginX: 1, display: { xs: "none", md: "block" } }}>
             <Typography variant="h6" component="div">

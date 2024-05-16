@@ -3,7 +3,6 @@ import { Box, Button, Container, IconButton, List, ListItem, ListItemText, SvgIc
 import { FooterTooltip } from "./Component/CustomMui/FooterTooltip";
 // import Line from "../../public/logo/line-logo.svg";
 import Link from "next/link";
-import { hoverUnderline } from "./Component/Props";
 
 const nav = ["About", "Staff", "Partners", "Tournament", "Contact"];
 
@@ -22,15 +21,16 @@ export default function Footer() {
         alignItems: "center",
       }}
     >
-      <Box sx={{ width: "70%", display:"flex", justifyContent:"center"  }}>
+      <Box sx={{ width: "70%", display: "flex", justifyContent: "center" }}>
         {nav.map((page) => (
-          <Link key={page} href={`/${page.toLowerCase()}`} className="px-4">
+          <Link key={page} href={`/${page.toLowerCase()}`} className="px-1 mx-1">
             <Button
               sx={{
-                ":hover": { backgroundColor:"rgba(50,205,50,0.5)" },
-                backgroundColor:"inherit",
+                ":hover": { backgroundColor: "rgba(50,205,50,0.5)" },
+                backgroundColor: "inherit",
                 transition: "background-color 700ms linear",
-                color: "black"
+                color: "black",
+                display: { xs: "none", sm: "block" },
               }}
             >
               {page}
