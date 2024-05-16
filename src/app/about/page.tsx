@@ -1,3 +1,4 @@
+import QDOGallery from "@/ui/About/QDOGallery";
 import BodySubtitle from "@/ui/Component/CustomMui/BodySubtitle";
 import BodyTypography from "@/ui/Component/CustomMui/BodyTypography";
 import { Box, Container, Stack, Typography } from "@mui/material";
@@ -10,6 +11,7 @@ const LibreBaskerville = Libre_Baskerville({
 });
 
 export default function Home() {
+
   return (
     <Box>
       <Container
@@ -24,7 +26,7 @@ export default function Home() {
       >
         <Box width={{ xs: "80vw", md: "50vw" }} sx={{ marginX: "auto", backgroundColor: "rgba(200,200,200,0.5)" }}>
           <Stack
-            sx={{ minHeight: { xs: "50vh", sm: "55vh", md: "60vh" } }}
+            sx={{ minHeight: { xs: "35vh", sm: "55vh", md: "60vh" } }}
             alignItems="center"
             justifyContent="space-evenly"
             spacing={1}
@@ -32,7 +34,7 @@ export default function Home() {
             <Box width="100%" sx={{ display: "flex", justifyContent: "left", paddingLeft: 3 }}>
               <Typography
                 className={LibreBaskerville.className}
-                sx={{ fontSize: { xs: "3rem", md: "4rem" } }}
+                sx={{ fontSize: { xs: "2rem", sm:"3rem", md: "4rem" } }}
                 color="black"
               >
                 {" "}
@@ -42,7 +44,7 @@ export default function Home() {
             <Box width="100%" sx={{ display: "flex", justifyContent: "right", paddingRight: 3 }}>
               <Typography
                 className={LibreBaskerville.className}
-                sx={{ fontSize: { xs: "3rem", md: "4rem" } }}
+                sx={{ fontSize: { xs: "2rem", sm:"3rem", md: "4rem" } }}
                 color="black"
               >
                 {" "}
@@ -87,6 +89,7 @@ export default function Home() {
             additional consideration. Sorry to limit the accessibility to this event.
           </BodyTypography>
         </Box>
+        <QDOGallery />
       </Stack>
     </Box>
   );

@@ -12,7 +12,7 @@ export default function Footer() {
       maxWidth={false}
       sx={{
         backgroundColor: "seagreen",
-        minHeight: "150px",
+        minHeight: "30vh",
         width: "100%",
         margin: "0",
         display: "flex",
@@ -23,7 +23,7 @@ export default function Footer() {
     >
       <Box sx={{ width: "70%", display: "flex", justifyContent: "center" }}>
         {nav.map((page) => (
-          <Link key={page} href={`/${page.toLowerCase()}`} className="px-1 mx-1">
+          <Link key={page} href={`/${page.toLowerCase()}`} style={{margin:"0px 3px"}} >
             <Button
               sx={{
                 ":hover": { backgroundColor: "rgba(50,205,50,0.5)" },

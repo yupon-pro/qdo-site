@@ -21,8 +21,8 @@ const images = [assembly, winner, takingMemo, coups, judge, finalRound, discussi
 export default function HomeSlider() {
   const slideSettings = {
     0: {
-      slidesPerView: 1.4,
-      spaceBetween: 10,
+      slidesPerView: 1.2,
+      spaceBetween: 5,
     },
     1024: {
       slidesPerView: 2,
@@ -39,7 +39,7 @@ export default function HomeSlider() {
       loop={true}
       speed={1000}
       autoplay={{
-        delay: 2500,
+        delay: 3000,
         disableOnInteraction: false,
       }}
       navigation

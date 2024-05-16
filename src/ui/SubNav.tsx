@@ -25,7 +25,7 @@ export default function SubNav() {
   if (pages == undefined) return null;
 
   return (
-    <Box sx={{ display: "flex", justifyContent: "center", backgroundColor: "gray" }}>
+    <Box sx={{position:"fixed", width:"100%", zIndex:10, display: "flex", justifyContent: "center", backgroundColor: "gray" }}>
       {pages.map((page, index) => (
         <Link key={index} href={`/${flagAboutPage ? "about" : "tournament"}/${page[1]}`}>
           <Button sx={{ ...hoverUnderline, color: "#fff" }}>{page[0]}</Button>

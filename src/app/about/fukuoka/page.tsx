@@ -1,37 +1,11 @@
-"use client";
-
+import FukuokaImpression from "@/ui/About/FukuokaImpression";
 import ArrowButton from "@/ui/Component/CustomMui/ArrowButton";
 import BodySubtitle from "@/ui/Component/CustomMui/BodySubtitle";
 import BodyTypography from "@/ui/Component/CustomMui/BodyTypography";
-import PhotoDialog from "@/ui/Component/Dialog/PhotoDialog";
 import { Box, Container, ImageList, ImageListItem, Stack, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { Fragment } from "react";
 
-const images = [
-  { title: "小郡城", row: 2 },
-  { title: "うきはのいちご" },
-  { title: "八女提灯", row: 2, col: 2 },
-  { title: "かしわ飯" },
-  { title: "オルレ大島宗像", row: 2, col: 2 },
-  { title: "久留米つつじ公園", col: 2 },
-  { title: "屋台" },
-  { title: "糸島" },
-  { title: "作業風景", row: 2 },
-  { title: "辛子明太子" },
-  { title: "天神中央公園", row: 2, col: 2 },
-  { title: "星野村棚田" },
-  { title: "九州国立博物館", row: 2, col: 2 },
-  { title: "博多ラーメン" },
-  { title: "大川組子", row: 2 },
-  { title: "浮羽稲荷神社" },
-  { title: "柳川雛祭り", row: 2 },
-  { title: "柳川まり" },
-  { title: "北九州空港", row: 2, col: 2 },
-  { title: "柳川川下り" },
-];
-
 export default function Home() {
-  const matches = useMediaQuery("(max-width:600px)");
 
   return (
     <Fragment>
@@ -89,28 +63,7 @@ export default function Home() {
           <BodyTypography>If you want to search further information, please browse the official site.</BodyTypography>
           <ArrowButton url="https://www.crossroadfukuoka.jp/en" text="visit site" />
         </Box>
-        <Box justifyContent="center">
-          <Box>
-            <Typography variant="h4" align="center">
-              Impression
-            </Typography>
-            <Typography variant="caption" align="center">
-              ©Fukuoka prefecture travel association
-            </Typography>
-          </Box>
-        </Box>
-        <ImageList
-          sx={{ width: { xs: 300, sm: 400, md: 650 }, height: 1250 }}
-          variant="quilted"
-          cols={matches ? 1 : 4}
-          rowHeight={matches ? 150 : 121}
-        >
-          {images.map((image) => (
-            <ImageListItem key={image.title} cols={matches ? 1 : image.col || 1} rows={matches ? 1 : image.row || 1}>
-              <PhotoDialog image={{ title: image.title, url: `/thirdparty/fukuoka/${image.title}.jpeg` }} />
-            </ImageListItem>
-          ))}
-        </ImageList>
+        <FukuokaImpression />
       </Stack>
     </Fragment>
   );

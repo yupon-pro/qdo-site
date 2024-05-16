@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <Fragment>
       <Typography align="center" variant="h2" sx={{ paddingY: 8 }}>
-        Staff Member
+        Committee
       </Typography>
       <Stack spacing={2} sx={{ paddingY: 3, display: "flex", flexDirection: "column", alignItems: "center" }}>
         <Container sx={{ width: { md: "75%", sm: "60%" } }}>

@@ -7,6 +7,7 @@ import Image from "next/image";
 import sapling from "../../public/photos/sapling.jpeg";
 import funny from "../../public/photos/funny.jpeg";
 
+
 export default function Home() {
   return (
     <Fragment>

@@ -2,10 +2,10 @@
 
 import * as React from "react";
 import Dialog from "@mui/material/Dialog";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { Box } from "@mui/material";
 
-export default function PhotoDialog({ image }: { image: { title: string; url: string } }) {
+export default function PhotoDialog({ image }: { image: { title: string; url: string | StaticImageData } }) {
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -27,7 +27,7 @@ export default function PhotoDialog({ image }: { image: { title: string; url: st
       >
         <Image
           src={image.url}
-          blurDataURL={image.url}
+          blurDataURL={ typeof image.url === "string" ? image.url : undefined }
           placeholder="blur"
           fill
           style={{ objectFit: "cover" }}
@@ -37,7 +37,7 @@ export default function PhotoDialog({ image }: { image: { title: string; url: st
         />
       </Box>
       <Dialog open={open} onClose={handleClose}>
-        <Image src={image.url} blurDataURL={image.url} placeholder="blur" alt={image.title} height={450} width={450} />
+        <Image src={image.url} blurDataURL={typeof image.url === "string" ? image.url : undefined} placeholder="blur" alt={image.title} height={450} width={450} />
       </Dialog>
     </React.Fragment>
   );

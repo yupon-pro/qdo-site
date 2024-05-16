@@ -93,24 +93,24 @@ export default function Home() {
 function BusStopList() {
   return (
     <List disablePadding>
-      <ListItem disablePadding>
-        <ListItemText sx={{ maxWidth: "75vw" }}>
+      <ListItem disableGutters >
+        <ListItemText inset >
           *Please take one of these buses below (DO NOT take No.3, No.4, No.6, No.7 bus);
         </ListItemText>
       </ListItem>
-      <ListItem disableGutters>
+      <ListItem >
         <ListItemText inset>No.1九大総合グラウンド(Kyudai Sogo Ground)</ListItemText>
       </ListItem>
-      <ListItem disableGutters>
+      <ListItem>
         <ListItemText inset>No.2九大総合グラウンド(Kyudai Sogo Ground)</ListItemText>
       </ListItem>
-      <ListItem disableGutters>
+      <ListItem>
         <ListItemText inset>No.5九大総合グラウンド(Kyudai Sogo Ground)</ListItemText>
       </ListItem>
-      <ListItem disableGutters>
+      <ListItem>
         <ListItemText inset>No.8九大総合グラウンド(Kyudai Sogo Ground)</ListItemText>
       </ListItem>
-      <ListItem disableGutters>
+      <ListItem>
         <ListItemText inset>No.9九大東ゲート(Kyudai Higashi Gate)</ListItemText>
       </ListItem>
     </List>
