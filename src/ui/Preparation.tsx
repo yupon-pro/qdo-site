@@ -32,7 +32,7 @@ export default function FollowCursor() {
       sx={{
         height: "80vh",
         width: "100%",
-        backgroundImage: "url('/construction.jpeg')",
+        backgroundImage: "url('/building.jpeg')",
         backgroundSize: { xs: "80%", sm: "70%", md: "60%", lg: "50%" },
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
