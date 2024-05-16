@@ -8,7 +8,7 @@ import { useNavHeight } from "./ContextProvider";
 
 const aboutPages: [string, string][] = [
   ["QDO", ""],
-  ["Kyushu Uni", "kyushu_university"],
+  ["Kyushu Uni", "kyushu-university"],
   ["Fukuoka", "fukuoka"],
 ];
 

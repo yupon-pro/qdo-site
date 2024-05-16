@@ -13,12 +13,6 @@ export default function FollowCursor() {
 
   useEffect(() => {
     window.addEventListener("mousemove", handleMouseMove);
-    window.addEventListener("touchstart", (e: TouchEvent) => {
-      e.preventDefault();
-    });
-    window.addEventListener("touchend", (e: TouchEvent) => {
-      e.preventDefault();
-    });
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
@@ -29,6 +23,8 @@ export default function FollowCursor() {
     <Box
       onMouseOver={() => setMouseOver(true)}
       onMouseOut={() => setMouseOver(false)}
+      onTouchStart={(e:React.TouchEvent) => e.preventDefault() }
+      onTouchEnd={(e:React.TouchEvent) => e.preventDefault() }
       sx={{
         height: "80vh",
         width: "100%",
