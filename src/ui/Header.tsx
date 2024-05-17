@@ -17,6 +17,7 @@ import {
   ListItemText,
   Toolbar,
   Typography,
+  useMediaQuery,
 } from "@mui/material";
 import Link from "next/link";
 import { hoverUnderline } from "./Component/Props";
@@ -26,14 +27,14 @@ const drawerWidth = 200;
 const navItems = ["About", "Staff", "Partners", "Tournament", "Contact"];
 
 export default function DrawerAppBar() {
+  const matches = useMediaQuery("(max-width:595px)");
   const ref = React.useRef<HTMLHeadElement>(null);
-  const { navHeight, setNavHeight } = useNavHeight();
+  const {  setNavHeight } = useNavHeight();
 
   React.useEffect(() => {
     const height = ref.current?.offsetHeight;
-    console.log(height);
     setNavHeight((prev) => (height ? height : prev));
-  }, []);
+  }, [matches]);
 
   const [mobileOpen, setMobileOpen] = React.useState(false);
 

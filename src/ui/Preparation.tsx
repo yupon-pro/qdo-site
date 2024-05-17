@@ -30,6 +30,7 @@ export default function FollowCursor() {
         width: "100%",
         backgroundImage: "url('/building.jpeg')",
         backgroundSize: { xs: "80%", sm: "70%", md: "60%", lg: "50%" },
+        transitionDuration:"1100ms",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
