@@ -29,7 +29,7 @@ const navItems = ["About", "Staff", "Partners", "Tournament", "Contact"];
 export default function DrawerAppBar() {
   const matches = useMediaQuery("(max-width:595px)");
   const ref = React.useRef<HTMLHeadElement>(null);
-  const {  setNavHeight } = useNavHeight();
+  const { setNavHeight } = useNavHeight();
 
   React.useEffect(() => {
     const height = ref.current?.offsetHeight;

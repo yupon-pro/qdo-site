@@ -14,13 +14,13 @@ export default function Home() {
           backgroundRepeat: "no-repeat",
           backgroundColor: "transparent",
           opacity: "0.7",
-          height: { xs: "35vh", sm: "50vh", md:"70vh" },
-          transitionDuration:"1000ms"
+          height: { xs: "35vh", sm: "50vh", md: "70vh" },
+          transitionDuration: "1000ms",
         }}
       />
       <Stack alignItems="center" spacing={5} sx={{ marginY: 5 }}>
         <Box>
-          <Typography sx={{ typography: { xs: "h5", sm: "h4", md:"h3" } }}> Kyushu University</Typography>
+          <Typography sx={{ typography: { xs: "h5", sm: "h4", md: "h3" } }}> Kyushu University</Typography>
         </Box>
         <Box sx={{ width: { xs: "75%", sm: "60%" } }}>
           <BodySubtitle>Outline</BodySubtitle>

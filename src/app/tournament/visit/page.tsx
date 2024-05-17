@@ -19,7 +19,7 @@ export default function Home() {
               backgroundPosition: "center 20%",
               backgroundRepeat: "no-repeat",
               backgroundColor: "transparent",
-              transitionDuration:"1000ms",
+              transitionDuration: "1000ms",
               height: { xs: "40vh", md: "55vh" },
               display: "flex",
               justifyContent: "center",
@@ -36,7 +36,7 @@ export default function Home() {
                 alignItems: "center",
               }}
             >
-              <Typography  sx={{ typography:{ xs:"h5", sm:"h4",  }, transitionDuration:"1000ms" }}>
+              <Typography sx={{ typography: { xs: "h5", sm: "h4" }, transitionDuration: "1000ms" }}>
                 Airplane
               </Typography>
             </Box>
@@ -57,7 +57,7 @@ export default function Home() {
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
               backgroundColor: "transparent",
-              transitionDuration:"1000ms",
+              transitionDuration: "1000ms",
               height: { xs: "40vh", sm: "45vh", md: "50vh" },
               display: "flex",
               justifyContent: "center",
@@ -75,7 +75,7 @@ export default function Home() {
                 alignItems: "center",
               }}
             >
-              <Typography  sx={{ typography:{ xs:"h5", sm:"h4",  }, transitionDuration:"1000ms" }}>
+              <Typography sx={{ typography: { xs: "h5", sm: "h4" }, transitionDuration: "1000ms" }}>
                 Shinkansen / JR train
               </Typography>
             </Box>

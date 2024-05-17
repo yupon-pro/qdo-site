@@ -54,7 +54,11 @@ export default function QDOGallery() {
         cols={matches ? 1 : 2}
       >
         {images.map((image) => (
-          <ImageListItem key={image.title} cols={matches ? 1 : image.featured ? 2 : 1}  rows={ matches ? 1 : image.featured ? 1.25 : 1  } >
+          <ImageListItem
+            key={image.title}
+            cols={matches ? 1 : image.featured ? 2 : 1}
+            rows={matches ? 1 : image.featured ? 1.25 : 1}
+          >
             <PhotoDialog image={{ title: image.title, url: image.url }} />
           </ImageListItem>
         ))}
