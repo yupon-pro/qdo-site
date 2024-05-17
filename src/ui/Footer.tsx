@@ -47,7 +47,9 @@ export default function Footer() {
           </FooterTooltip>
           <FooterTooltip title="Facebook">
             <IconButton>
-              <Facebook fontSize="large" />
+              <Link href="https://www.facebook.com/QDO.KyushuDebateOpen/?locale=ja_JP" >
+                <Facebook fontSize="large" />
+              </Link>
             </IconButton>
           </FooterTooltip>
           <FooterTooltip title="Instagram">
