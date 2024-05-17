@@ -17,12 +17,13 @@ export default function Home() {
           backgroundRepeat: "no-repeat",
           backgroundColor: "transparent",
           opacity: "0.7",
-          height: { xs: "35vh", sm: "70vh" },
+          height: { xs: "35vh", sm: "50vh", md:"70vh" },
+          transitionDuration:"1000ms"
         }}
       />
       <Stack alignItems="center" spacing={5} sx={{ marginY: "2rem" }}>
         <Box>
-          <Typography sx={{ typography: { xs: "h4", sm: "h3" } }}> Fukuoka</Typography>
+          <Typography sx={{ typography: { xs: "h5", sm: "h4", md:"h3" }}}> Fukuoka Prefecture</Typography>
         </Box>
         <Box sx={{ width: { xs: "75%", sm: "60%" } }}>
           <BodySubtitle>Outline</BodySubtitle>

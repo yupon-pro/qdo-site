@@ -25,7 +25,7 @@ export default function Home() {
       >
         <Box width={{ xs: "80vw", md: "50vw" }} sx={{ marginX: "auto", backgroundColor: "rgba(200,200,200,0.5)" }}>
           <Stack
-            sx={{ minHeight: { xs: "35vh", sm: "55vh", md: "60vh" } }}
+            sx={{ minHeight: { xs: "35vh", sm: "55vh", md: "60vh" }, transitionDuration:"1000ms" }}
             alignItems="center"
             justifyContent="space-evenly"
             spacing={1}
@@ -54,7 +54,7 @@ export default function Home() {
         </Box>
       </Container>
       <Stack alignItems="center" spacing={5} sx={{ marginY: "2rem" }}>
-        <Typography sx={{ typography: { xs: "h4", sm: "h3" } }}> Kyushu Debate Open </Typography>
+        <Typography sx={{ typography: { xs: "h5", sm: "h4", md:"h3" } }}> Kyushu Debate Open </Typography>
         <Box sx={{ width: { xs: "75%", sm: "60%" } }}>
           <BodySubtitle>Circumstances</BodySubtitle>
           <BodyTypography>
