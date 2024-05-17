@@ -18,13 +18,13 @@ export default function FollowCursor() {
       window.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
-  //
+
   return (
     <Box
       onMouseOver={() => setMouseOver(true)}
       onMouseOut={() => setMouseOver(false)}
-      onTouchStart={(e:React.TouchEvent) => e.preventDefault() }
-      onTouchEnd={(e:React.TouchEvent) => e.preventDefault() }
+      onTouchStart={(e: React.TouchEvent) => e.preventDefault()}
+      onTouchEnd={(e: React.TouchEvent) => e.preventDefault()}
       sx={{
         height: "80vh",
         width: "100%",
