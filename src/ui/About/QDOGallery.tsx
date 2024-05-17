@@ -48,13 +48,13 @@ export default function QDOGallery() {
         </Box>
       </Box>
       <ImageList
-        sx={{ width: { xs: 300, sm: 400, md: 650 }, height: 1345 }}
+        sx={{ width: { xs: 300, sm: 400, md: 650 }, height: matches ? 2000 : 1500 }}
         variant="quilted"
         rowHeight={160}
         cols={matches ? 1 : 2}
       >
         {images.map((image) => (
-          <ImageListItem key={image.title} cols={matches ? 1 : image.featured ? 2 : 1}>
+          <ImageListItem key={image.title} cols={matches ? 1 : image.featured ? 2 : 1}  rows={ matches ? 1 : image.featured ? 1.25 : 1  } >
             <PhotoDialog image={{ title: image.title, url: image.url }} />
           </ImageListItem>
         ))}

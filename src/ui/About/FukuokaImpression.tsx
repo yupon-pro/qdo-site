@@ -65,7 +65,7 @@ export default function FukuokaImpression() {
         </Box>
       </Box>
       <ImageList
-        sx={{ width: { xs: 300, sm: 400, md: 650 }, height: 1250 }}
+        sx={{ width: { xs: 300, sm: 400, md: 650 }, height: matches ? 3125 : 1250 }}
         variant="quilted"
         cols={matches ? 1 : 4}
         rowHeight={matches ? 150 : 121}
