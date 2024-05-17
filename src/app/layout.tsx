@@ -6,6 +6,7 @@ import { Box } from "@mui/material";
 import "./globals.css";
 import SubNav from "@/ui/SubNav";
 import { ContextProvider } from "@/ui/ContextProvider";
+import { ReactNode } from "react";
 // このglobals.cssがtailwindcssのスタイリング提供になっているので、
 // これは外してはダメ！
 
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <html>

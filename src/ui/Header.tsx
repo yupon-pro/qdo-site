@@ -1,6 +1,5 @@
 "use client";
 
-import * as React from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import {
   AppBar,
@@ -22,6 +21,7 @@ import {
 import Link from "next/link";
 import { hoverUnderline } from "./Component/Props";
 import { useNavHeight } from "./ContextProvider";
+import { useEffect, useRef, useState } from "react";
 
 const drawerWidth = 200;
 const navItems = ["About", "Staff", "Partners", "Tournament", "Contact"];
@@ -29,15 +29,15 @@ const navItems = ["About", "Staff", "Partners", "Tournament", "Contact"];
 export default function DrawerAppBar() {
   const matches = useMediaQuery("(max-width:595px)");
   const anyHover = useMediaQuery("(any-hover:hover)");
-  const ref = React.useRef<HTMLHeadElement>(null);
+  const ref = useRef<HTMLHeadElement>(null);
   const { setNavHeight } = useNavHeight();
 
-  React.useEffect(() => {
+  useEffect(() => {
     const height = ref.current?.offsetHeight;
     setNavHeight((prev) => (height ? height : prev));
   }, [matches]);
 
-  const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);

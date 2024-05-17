@@ -1,12 +1,12 @@
 "use client";
 
-import * as React from "react";
 import Dialog from "@mui/material/Dialog";
 import Image, { StaticImageData } from "next/image";
 import { Box } from "@mui/material";
+import { Fragment, useState } from "react";
 
 export default function PhotoDialog({ image }: { image: { title: string; url: string | StaticImageData } }) {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -17,7 +17,7 @@ export default function PhotoDialog({ image }: { image: { title: string; url: st
   };
 
   return (
-    <React.Fragment>
+    <Fragment>
       <Box
         sx={{
           ":hover": { cursor: "pointer", opacity: 0.65 },
@@ -46,6 +46,6 @@ export default function PhotoDialog({ image }: { image: { title: string; url: st
           width={450}
         />
       </Dialog>
-    </React.Fragment>
+    </Fragment>
   );
 }

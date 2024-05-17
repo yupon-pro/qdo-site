@@ -4,7 +4,7 @@ import { Box, Tab, Tabs } from "@mui/material";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useNavHeight } from "./ContextProvider";
-import { useState } from "react";
+import { SyntheticEvent, useEffect, useState } from "react";
 
 const aboutPages: [string, string][] = [
   ["QDO", ""],
@@ -18,7 +18,7 @@ const tournamentPages: [string, string][] = ["Registration", "Visit", "Schedule"
 ]);
 
 export default function SubNav() {
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState<number|boolean>(false);
 
   const { navHeight } = useNavHeight();
   const pathname = usePathname();
@@ -26,9 +26,16 @@ export default function SubNav() {
   const flagTournamentPage = pathname.includes("tournament");
   const pages = flagAboutPage ? aboutPages : flagTournamentPage ? tournamentPages : undefined;
 
+  useEffect(()=>{
+    if (pages == undefined) return ;
+    return () => {
+      setValue(false);
+    };
+  },[pages]);
+
   if (pages == undefined) return null;
 
-  function handleChange(e: React.SyntheticEvent, newValue: number) {
+  function handleChange(e: SyntheticEvent, newValue: number) {
     setValue(newValue);
   }
 

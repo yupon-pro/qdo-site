@@ -1,15 +1,15 @@
 "use client";
 
-import * as React from "react";
 import Dialog from "@mui/material/Dialog";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import { Box } from "@mui/material";
 import PrivacyPolicy from "../Assets/PrivacyPolicy";
+import { Fragment, useState } from "react";
 
 export default function RegulationDialog() {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -20,7 +20,7 @@ export default function RegulationDialog() {
   };
 
   return (
-    <React.Fragment>
+    <Fragment>
       <Box
         sx={{
           marginInline: "auto",
@@ -49,6 +49,6 @@ export default function RegulationDialog() {
           </DialogContentText>
         </DialogContent>
       </Dialog>
-    </React.Fragment>
+    </Fragment>
   );
 }
