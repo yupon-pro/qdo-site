@@ -24,6 +24,7 @@ export default function Home() {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              transitionProperty: "height, background-position",
             }}
           >
             <Box
@@ -36,7 +37,13 @@ export default function Home() {
                 alignItems: "center",
               }}
             >
-              <Typography sx={{ typography: { xs: "h5", sm: "h4" }, transitionDuration: "1000ms" }}>
+              <Typography
+                sx={{
+                  typography: { xs: "h5", sm: "h4", lg: "h3" },
+                  transitionDuration: "1000ms",
+                  transitionProperty: "font-size",
+                }}
+              >
                 Airplane
               </Typography>
             </Box>
@@ -62,6 +69,7 @@ export default function Home() {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              transitionProperty: "height, background-size",
             }}
           >
             <Box
@@ -75,7 +83,13 @@ export default function Home() {
                 alignItems: "center",
               }}
             >
-              <Typography sx={{ typography: { xs: "h5", sm: "h4" }, transitionDuration: "1000ms" }}>
+              <Typography
+                sx={{
+                  typography: { xs: "h5", sm: "h4", lg: "h3" },
+                  transitionDuration: "1000ms",
+                  transitionProperty: "font-size",
+                }}
+              >
                 Shinkansen / JR train
               </Typography>
             </Box>

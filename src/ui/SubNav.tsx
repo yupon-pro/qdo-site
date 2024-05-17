@@ -1,10 +1,10 @@
 "use client";
 
-import { Box, Button } from "@mui/material";
+import { Box, Tab, Tabs } from "@mui/material";
 import Link from "next/link";
-import { hoverUnderline } from "./Component/Props";
 import { usePathname } from "next/navigation";
 import { useNavHeight } from "./ContextProvider";
+import { useState } from "react";
 
 const aboutPages: [string, string][] = [
   ["QDO", ""],
@@ -18,6 +18,8 @@ const tournamentPages: [string, string][] = ["Registration", "Visit", "Schedule"
 ]);
 
 export default function SubNav() {
+  const [value, setValue] = useState(0);
+
   const { navHeight } = useNavHeight();
   const pathname = usePathname();
   const flagAboutPage = pathname.includes("about");
@@ -25,6 +27,10 @@ export default function SubNav() {
   const pages = flagAboutPage ? aboutPages : flagTournamentPage ? tournamentPages : undefined;
 
   if (pages == undefined) return null;
+
+  function handleChange(e: React.SyntheticEvent, newValue: number) {
+    setValue(newValue);
+  }
 
   return (
     <Box
@@ -34,15 +40,16 @@ export default function SubNav() {
         width: "100%",
         zIndex: 10,
         display: "flex",
+        gap: 2,
         justifyContent: "center",
         backgroundColor: "gray",
       }}
     >
-      {pages.map((page, index) => (
-        <Link key={index} href={`/${flagAboutPage ? "about" : "tournament"}/${page[1]}`}>
-          <Button sx={{ ...hoverUnderline, color: "#fff" }}>{page[0]}</Button>
-        </Link>
-      ))}
+      <Tabs value={value} onChange={handleChange} indicatorColor="primary" textColor="primary">
+        {pages.map((page, index) => (
+            <Tab key={index}  value={index} label={page[0]} component={Link} href={`/${flagAboutPage ? "about" : "tournament"}/${page[1]}`} />
+        ))}
+      </Tabs>
     </Box>
   );
 }

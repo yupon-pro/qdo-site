@@ -21,9 +21,9 @@ export default function Footer() {
         alignItems: "center",
       }}
     >
-      <Box sx={{ width: "70%", display: "flex", justifyContent: "center" }}>
+      <Box sx={{ width: "70%", display: "flex", justifyContent: "center", gap: 2 }}>
         {nav.map((page) => (
-          <Link key={page} href={`/${page.toLowerCase()}`} style={{ margin: "0px 3px" }}>
+          <Link key={page} href={`/${page.toLowerCase()}`}>
             <Button
               sx={{
                 ":hover": { backgroundColor: "rgba(50,205,50,0.5)" },

@@ -1,11 +1,12 @@
 "use client";
 
-import React, { useState, useEffect, Fragment } from "react";
+import React, { useState, useEffect, Fragment, useRef } from "react";
 import { Box, Typography } from "@mui/material";
 
-export default function FollowCursor() {
+export default function Preparation() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [mouseOver, setMouseOver] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
 
   function handleMouseMove(e: MouseEvent) {
     setMousePosition({ x: e.pageX, y: e.pageY });
@@ -13,18 +14,20 @@ export default function FollowCursor() {
 
   useEffect(() => {
     window.addEventListener("mousemove", handleMouseMove);
+    const element = ref.current;
+    element?.addEventListener("touchstart", (e:TouchEvent) => e.preventDefault());
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
+      element?.addEventListener("touchstart", (e:TouchEvent) => e.preventDefault());
     };
   }, []);
 
   return (
     <Box
+      ref={ref}
       onMouseOver={() => setMouseOver(true)}
       onMouseOut={() => setMouseOver(false)}
-      onTouchStart={(e: React.TouchEvent) => e.preventDefault()}
-      onTouchEnd={(e: React.TouchEvent) => e.preventDefault()}
       sx={{
         height: "80vh",
         width: "100%",
@@ -33,12 +36,15 @@ export default function FollowCursor() {
         transitionDuration: "1100ms",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
+        transitionProperty: "background-size",
       }}
     >
       <Typography
         sx={{
           zIndex: 10,
           typography: { xs: "h4", sm: "h3", md: "h2" },
+          transitionDuration: "1100ms",
+          transitionProperty: "font-size",
           position: "absolute",
           top: "50%",
           left: "5%",
@@ -62,6 +68,7 @@ export default function FollowCursor() {
             // filter: mouseOver ? 'invert(1)' : "invert(0)" ,
             pointerEvents: "none",
             transitionDuration: "135ms",
+            transitionProperty: "transform",
             transform: `translate(${mousePosition.x}px, ${mousePosition.y}px)`,
           }}
         />

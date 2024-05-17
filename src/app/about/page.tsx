@@ -23,7 +23,7 @@ export default function Home() {
           backgroundColor: "transparent",
         }}
       >
-        <Box width={{ xs: "80vw", md: "50vw" }} sx={{ marginX: "auto", backgroundColor: "rgba(200,200,200,0.5)" }}>
+        <Box width={{ xs: "80vw", md: "50vw" }} sx={{ marginInline: "auto", backgroundColor: "rgba(200,200,200,0.5)" }}>
           <Stack
             sx={{ minHeight: { xs: "35vh", sm: "55vh", md: "60vh" }, transitionDuration: "1000ms" }}
             alignItems="center"

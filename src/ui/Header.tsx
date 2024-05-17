@@ -28,6 +28,7 @@ const navItems = ["About", "Staff", "Partners", "Tournament", "Contact"];
 
 export default function DrawerAppBar() {
   const matches = useMediaQuery("(max-width:595px)");
+  const anyHover = useMediaQuery("(any-hover:hover)");
   const ref = React.useRef<HTMLHeadElement>(null);
   const { setNavHeight } = useNavHeight();
 
@@ -91,7 +92,11 @@ export default function DrawerAppBar() {
           <Box sx={{ display: { xs: "none", md: "block" } }}>
             {navItems.map((item) => (
               <Link key={item} href={`/${item.toLowerCase()}`}>
-                <Button sx={{ ...hoverUnderline, color: "#fff" }}>{item}</Button>
+                {anyHover ? (
+                  <Button sx={{ ...hoverUnderline,  color: "#fff" }}>{item}</Button>
+                ) : (
+                  <Button sx={{ color: "#fff" }}>{item}</Button>
+                )}
               </Link>
             ))}
           </Box>

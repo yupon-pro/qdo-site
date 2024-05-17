@@ -23,7 +23,7 @@ export default function RegulationDialog() {
     <React.Fragment>
       <Box
         sx={{
-          margin: "auto",
+          marginInline: "auto",
           paddingY: 2,
           borderTop: "1px solid black",
           borderBottom: "1px solid black",

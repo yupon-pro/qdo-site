@@ -16,6 +16,7 @@ export default function Home() {
           opacity: "0.7",
           height: { xs: "35vh", sm: "50vh", md: "70vh" },
           transitionDuration: "1000ms",
+          transitionProperty: "height, background-position",
         }}
       />
       <Stack alignItems="center" spacing={5} sx={{ marginY: 5 }}>
