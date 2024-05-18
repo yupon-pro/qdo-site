@@ -6,7 +6,7 @@ import { Metadata } from "next";
 import { Fragment } from "react";
 
 export const metadata: Metadata = {
-  title: "Staff ",
+  title: "QDO 2024 - Staff ",
   description: "This page lets you know the member of committee and their roles.",
 };
 

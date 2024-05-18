@@ -5,7 +5,7 @@ import { Box, Container, Stack, Typography } from "@mui/material";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact ",
+  title: "QDO 2024 - Contact ",
   description:
     "For further inquiries, please feel free to contact us via Email. We will respond your questions as soon as possible.",
 };

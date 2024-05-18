@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Fragment } from "react";
 
 export const metadata: Metadata = {
-  title: "Tournament",
+  title: "QDO 2024 - Tournament",
   description: "This page contains three topics such as registration, schedule and transportation to the college.",
 };
 

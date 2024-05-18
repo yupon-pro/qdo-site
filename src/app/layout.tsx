@@ -11,7 +11,7 @@ import { ReactNode } from "react";
 // これは外してはダメ！
 
 export const metadata: Metadata = {
-  title: "Kyushu Debate Open 2024",
+  title: "Kyushu Debate Open 2024 - QDO 2024 ",
   description:
     "We announce that the Kyushu Debate Open(QDO) resumes this year. We constructed a special website for this resume of the event.",
   openGraph: {
