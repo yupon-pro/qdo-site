@@ -34,6 +34,7 @@ export default function RootLayout({
       <head>
         <meta name="google-site-verification" content="_TyL-pvXZgYIY7v7S07182dPzNKGGgTSm3RXT1LGyEc" />
         <link rel="shortcut icon" href="/icon.ico" />
+        <link rel="icon" href="/icon.ico" />
       </head>
       <body>
         <ContextProvider>
