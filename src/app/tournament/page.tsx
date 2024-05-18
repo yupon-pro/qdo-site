@@ -1,7 +1,15 @@
 import { Box, Stack, Typography } from "@mui/material";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Fragment } from "react";
+
+export const metadata: Metadata = {
+  title: "Kyushu Debate Open 2024 >> Tournament",
+  description:
+    "This page contains three topics such as registration, schedule and transportation to the college.",
+};
+
 
 const routes = [
   { nav: "Registration", image: "writing" },

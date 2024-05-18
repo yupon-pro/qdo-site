@@ -11,7 +11,7 @@ import { ReactNode } from "react";
 // これは外してはダメ！
 
 export const metadata: Metadata = {
-  title: "QDO 2024",
+  title: "Kyushu Debate Open 2024",
   description:
     "We announce that the Kyushu Debate Open(QDO) resumes this year. We constructed a special website for this resume of the event.",
 };
@@ -25,6 +25,7 @@ export default function RootLayout({
     <html>
       <head>
         <meta name="google-site-verification" content="_TyL-pvXZgYIY7v7S07182dPzNKGGgTSm3RXT1LGyEc" />
+        <link rel="shortcut icon" href="/icon.ico" />
       </head>
       <body>
         <ContextProvider>
