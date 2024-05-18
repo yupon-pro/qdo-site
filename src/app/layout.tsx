@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     title: "QDO 2024",
     description:
       "We announce that the Kyushu Debate Open(QDO) resumes this year. We constructed a special website for this resume of the event.",
-    images: [{ url: "https://kyushu-debate-open-2024.vercel.app/openGraphImage.png", width: 1920, height: 906 }],
+    // images: [{ url: "https://kyushu-debate-open-2024.vercel.app/openGraphImage.png", width: 1920, height: 906 }],
   },
 };
 
