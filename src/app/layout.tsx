@@ -7,19 +7,20 @@ import "./globals.css";
 import SubNav from "@/ui/SubNav";
 import { ContextProvider } from "@/ui/ContextProvider";
 import { ReactNode } from "react";
+import Script from "next/script";
 // このglobals.cssがtailwindcssのスタイリング提供になっているので、
 // これは外してはダメ！
 
+const description = "We announce that the Kyushu Debate Open(QDO) resumes this year. We constructed a special website for this resume of the event.";
+
 export const metadata: Metadata = {
   title: "Kyushu Debate Open 2024 - QDO 2024 ",
-  description:
-    "We announce that the Kyushu Debate Open(QDO) resumes this year. We constructed a special website for this resume of the event.",
+  description: description,
   openGraph: {
     type: "website",
     siteName: "Kyushu Debate Open 2024 Official Site",
     title: "QDO 2024",
-    description:
-      "We announce that the Kyushu Debate Open(QDO) resumes this year. We constructed a special website for this resume of the event.",
+    description: description,
     images: [{ url: "https://kyushu-debate-open-2024.vercel.app/opengraph-image.png", width: 1920, height: 906 }],
   },
 };
@@ -46,6 +47,16 @@ export default function RootLayout({
           </Box>
           <Footer />
         </ContextProvider>
+        <script 
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            "@context": "https://kyushu-debate-open-2024.vercel.app",
+            "@type" : "WebPage",
+            name: "Kyushu Debate Open 2024 - QDO 2024",
+            image: "https://kyushu-debate-open-2024.vercel.app/icon.ico",
+            description: description
+          }) }}
+        />
       </body>
     </html>
   );
