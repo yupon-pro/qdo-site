@@ -12,8 +12,14 @@ import { ReactNode } from "react";
 
 export const metadata: Metadata = {
   title: "Kyushu Debate Open 2024",
-  description:
-    "We announce that the Kyushu Debate Open(QDO) resumes this year. We constructed a special website for this resume of the event.",
+  description:"We announce that the Kyushu Debate Open(QDO) resumes this year. We constructed a special website for this resume of the event.",
+  openGraph:{
+    type:"website",
+    siteName:"Kyushu Debate Open 2024 Official Site",
+    title:"QDO 2024",
+    description:"We announce that the Kyushu Debate Open(QDO) resumes this year. We constructed a special website for this resume of the event.",
+    images: ["https://kyushu-debate-open-2024/logo/qdo-logo.jpeg"],
+  }
 };
 
 export default function RootLayout({
