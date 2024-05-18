@@ -21,7 +21,7 @@ export default function Home() {
             flexDirection: { xs: "column", md: "row-reverse" },
           }}
         >
-          <Box sx={{ position: "relative", height: { xs: "27vh", sm: "50vh" }, width: { xs: "220px", sm:"300px" }, transitionDuration:"1000ms", transitionProperty:"height, weight" }}>
+          <Box sx={{ position: "relative", height: { xs: "200px", sm: "50vh" }, width: { xs: "220px", sm:"300px" }, transitionDuration:"1000ms", transitionProperty:"height, weight" }}>
             <Image src={sapling} fill alt="revival" placeholder="blur" loading="lazy" />
           </Box>
           <Box maxWidth={{ xs: "75%", md: "50%" }} sx={{ paddingY: 2 }}>
@@ -48,7 +48,7 @@ export default function Home() {
             flexDirection: { xs: "column", md: "row" },
           }}
         >
-          <Box sx={{ position: "relative", height: { xs: "200px", sm: "74vh" }, width: { xs: "200px", sm:"300px" }, transitionDuration:"1000ms", transitionProperty:"height, weight" }}>
+          <Box sx={{ position: "relative", height: { xs: "45vh", sm: "74vh" }, width: { xs: "200px", sm:"300px" }, transitionDuration:"1000ms", transitionProperty:"height, weight" }}>
             <Image src={funny} fill alt="qdo" placeholder="blur" loading="lazy" />
           </Box>
           <Box maxWidth={{ xs: "75%", md: "50%" }} sx={{ paddingY: 2 }}>
