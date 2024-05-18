@@ -21,7 +21,9 @@ export default function Home() {
             flexDirection: { xs: "column", md: "row-reverse" },
           }}
         >
-          <Image src={sapling} height={300} width={300} alt="revival" placeholder="blur" loading="lazy" />
+          <Box sx={{ position: "relative", height: { xs: "27vh", sm: "50vh" }, width: { xs: "220px", sm:"300px" }, transitionDuration:"1000ms", transitionProperty:"height, weight" }}>
+            <Image src={sapling} fill alt="revival" placeholder="blur" loading="lazy" />
+          </Box>
           <Box maxWidth={{ xs: "75%", md: "50%" }} sx={{ paddingY: 2 }}>
             <Typography variant="h4" align="center">
               Restart
@@ -46,7 +48,9 @@ export default function Home() {
             flexDirection: { xs: "column", md: "row" },
           }}
         >
-          <Image src={funny} height={300} width={300} alt="qdo" placeholder="blur" loading="lazy" />
+          <Box sx={{ position: "relative", height: { xs: "45vh", sm: "74vh" }, width: { xs: "200px", sm:"300px" }, transitionDuration:"1000ms", transitionProperty:"height, weight" }}>
+            <Image src={funny} fill alt="qdo" placeholder="blur" loading="lazy" />
+          </Box>
           <Box maxWidth={{ xs: "75%", md: "50%" }} sx={{ paddingY: 2 }}>
             <Typography variant="h4" align="center">
               What is QDO?
