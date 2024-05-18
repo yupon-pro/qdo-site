@@ -50,7 +50,7 @@ export default function RootLayout({
         <script 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify({
-            "@context": "https://scheme.org",
+            "@context": "https://schema.org",
             "@type" : "WebPage",
             name: "Kyushu Debate Open 2024 - QDO 2024",
             image: "https://kyushu-debate-open-2024.vercel.app/icon.ico",
