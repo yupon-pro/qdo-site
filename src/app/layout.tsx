@@ -11,7 +11,8 @@ import Script from "next/script";
 // このglobals.cssがtailwindcssのスタイリング提供になっているので、
 // これは外してはダメ！
 
-const description = "We announce that the Kyushu Debate Open(QDO) resumes this year. We constructed a special website for this resume of the event.";
+const description =
+  "We announce that the Kyushu Debate Open(QDO) resumes this year. We constructed a special website for this resume of the event.";
 
 export const metadata: Metadata = {
   title: "Kyushu Debate Open 2024 - QDO 2024 ",
@@ -47,15 +48,17 @@ export default function RootLayout({
           </Box>
           <Footer />
         </ContextProvider>
-        <script 
+        <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type" : "WebPage",
-            name: "Kyushu Debate Open 2024 - QDO 2024",
-            image: "https://kyushu-debate-open-2024.vercel.app/icon.ico",
-            description: description
-          }) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              name: "Kyushu Debate Open 2024 - QDO 2024",
+              image: "https://kyushu-debate-open-2024.vercel.app/icon.ico",
+              description: description,
+            }),
+          }}
         />
       </body>
     </html>
