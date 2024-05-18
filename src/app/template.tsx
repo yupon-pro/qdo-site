@@ -9,7 +9,7 @@ const variants = {
   enter: { opacity: 1 },
 };
 
-export default function Template({ children }: { children:ReactNode }) {
+export default function Template({ children }: { children: ReactNode }) {
   const pathname = usePathname();
   return (
     <motion.div

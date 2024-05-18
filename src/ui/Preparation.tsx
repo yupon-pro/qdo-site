@@ -15,11 +15,11 @@ export default function Preparation() {
   useEffect(() => {
     window.addEventListener("mousemove", handleMouseMove);
     const element = ref.current;
-    element?.addEventListener("touchstart", (e:TouchEvent) => e.preventDefault());
+    element?.addEventListener("touchstart", (e: TouchEvent) => e.preventDefault());
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
-      element?.addEventListener("touchstart", (e:TouchEvent) => e.preventDefault());
+      element?.addEventListener("touchstart", (e: TouchEvent) => e.preventDefault());
     };
   }, []);
 

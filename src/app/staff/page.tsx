@@ -7,10 +7,8 @@ import { Fragment } from "react";
 
 export const metadata: Metadata = {
   title: "Staff ",
-  description:
-    "This page lets you know the member of committee and their roles.",
+  description: "This page lets you know the member of committee and their roles.",
 };
-
 
 const staff = [
   { name: "Reona Ishizuka", role: "TD" },

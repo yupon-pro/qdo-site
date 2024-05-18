@@ -93,7 +93,7 @@ export default function DrawerAppBar() {
             {navItems.map((item) => (
               <Link key={item} href={`/${item.toLowerCase()}`}>
                 {anyHover ? (
-                  <Button sx={{ ...hoverUnderline,  color: "#fff" }}>{item}</Button>
+                  <Button sx={{ ...hoverUnderline, color: "#fff" }}>{item}</Button>
                 ) : (
                   <Button sx={{ color: "#fff" }}>{item}</Button>
                 )}

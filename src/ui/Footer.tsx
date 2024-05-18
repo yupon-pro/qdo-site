@@ -47,7 +47,7 @@ export default function Footer() {
           </FooterTooltip>
           <FooterTooltip title="Facebook">
             <IconButton>
-              <Link href="https://www.facebook.com/QDO.KyushuDebateOpen/?locale=ja_JP" >
+              <Link href="https://www.facebook.com/QDO.KyushuDebateOpen/?locale=ja_JP">
                 <Facebook fontSize="large" />
               </Link>
             </IconButton>

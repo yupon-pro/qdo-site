@@ -18,7 +18,7 @@ const tournamentPages: [string, string][] = ["Registration", "Visit", "Schedule"
 ]);
 
 export default function SubNav() {
-  const [value, setValue] = useState<number|boolean>(false);
+  const [value, setValue] = useState<number | boolean>(false);
 
   const { navHeight } = useNavHeight();
   const pathname = usePathname();
@@ -26,12 +26,12 @@ export default function SubNav() {
   const flagTournamentPage = pathname.includes("tournament");
   const pages = flagAboutPage ? aboutPages : flagTournamentPage ? tournamentPages : undefined;
 
-  useEffect(()=>{
-    if (pages == undefined) return ;
+  useEffect(() => {
+    if (pages == undefined) return;
     return () => {
       setValue(false);
     };
-  },[pages]);
+  }, [pages]);
 
   if (pages == undefined) return null;
 
@@ -54,7 +54,13 @@ export default function SubNav() {
     >
       <Tabs value={value} onChange={handleChange} indicatorColor="primary" textColor="primary">
         {pages.map((page, index) => (
-            <Tab key={index}  value={index} label={page[0]} component={Link} href={`/${flagAboutPage ? "about" : "tournament"}/${page[1]}`} />
+          <Tab
+            key={index}
+            value={index}
+            label={page[0]}
+            component={Link}
+            href={`/${flagAboutPage ? "about" : "tournament"}/${page[1]}`}
+          />
         ))}
       </Tabs>
     </Box>

@@ -6,10 +6,8 @@ import { Fragment } from "react";
 
 export const metadata: Metadata = {
   title: "Tournament",
-  description:
-    "This page contains three topics such as registration, schedule and transportation to the college.",
+  description: "This page contains three topics such as registration, schedule and transportation to the college.",
 };
-
 
 const routes = [
   { nav: "Registration", image: "writing" },
