@@ -49,7 +49,7 @@ export default function Preparation() {
           top: "50%",
           left: "5%",
           padding: 3,
-          backgroundColor: "rgba(75,75,75,0.7)",
+          backgroundColor: "rgba(50,50,50,0.7)",
         }}
         color="whitesmoke"
       >

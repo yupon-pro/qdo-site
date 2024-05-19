@@ -49,7 +49,7 @@ export default function SubNav() {
         display: "flex",
         gap: 2,
         justifyContent: "center",
-        backgroundColor: "gray",
+        backgroundColor: "lightsteelblue",
       }}
     >
       <Tabs value={value} onChange={handleChange} indicatorColor="primary" textColor="primary">

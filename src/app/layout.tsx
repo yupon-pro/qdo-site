@@ -38,7 +38,7 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/icon.ico" />
         <link rel="icon" href="/icon.ico" />
       </head>
-      <body>
+      <body className="bg-[rgba(255,250,205,0.2)]">
         <ContextProvider>
           <ProgressBar />
           <Header />

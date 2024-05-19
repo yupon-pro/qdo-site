@@ -22,7 +22,7 @@ export default function ProgressBar() {
         style={{
           width: "100%",
           height: "100%",
-          backgroundColor: "blue",
+          backgroundColor: "midnightblue",
           scaleX: scaleX,
           transformOrigin: "left",
         }}

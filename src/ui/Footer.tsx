@@ -11,7 +11,7 @@ export default function Footer() {
     <Container
       maxWidth={false}
       sx={{
-        backgroundColor: "seagreen",
+        backgroundColor: "forestgreen",
         minHeight: "30vh",
         width: "100%",
         margin: "0",
@@ -21,7 +21,7 @@ export default function Footer() {
         alignItems: "center",
       }}
     >
-      <Box sx={{ width: "70%", display: "flex", justifyContent: "center", gap: 2 }}>
+      <Box sx={{ width: "70%", display: "flex", justifyContent: "center", gap: 1 }}>
         {nav.map((page) => (
           <Link key={page} href={`/${page.toLowerCase()}`}>
             <Button
@@ -30,6 +30,7 @@ export default function Footer() {
                 backgroundColor: "inherit",
                 transition: "background-color 700ms linear",
                 color: "black",
+                fontWeight: 600,
                 display: { xs: "none", sm: "block" },
               }}
             >
