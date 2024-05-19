@@ -36,7 +36,7 @@ export default function Home() {
               you about the slight changes in style. If you wish to review past events, please click the following
               button.
             </BodyTypography>
-            <ArrowButton url="https://kyushudebateopen.jimdofree.com/" text="read more" />
+            <ArrowButton url="https://kyushudebateopen.jimdofree.com/" text="Former Site" />
           </Box>
         </Container>
         <Container
