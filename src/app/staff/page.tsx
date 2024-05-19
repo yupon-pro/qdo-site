@@ -14,7 +14,7 @@ const staff = [
   { name: "Reona Ishizuka", role: "TD" },
   { name: "Hina Namisaki", role: "VTD" },
   { name: "Mami Matsuse", role: "AC" },
-  { name: "Minami Matsushimar", role: "AC" },
+  { name: "Minami Matsushima", role: "AC" },
   { name: "Kotaro Yoshida", role: "AC" },
   { name: "Atsuhiro Nishiyama", role: "CD" },
   { name: "Keigo Kawabata", role: "CD・MD" },
