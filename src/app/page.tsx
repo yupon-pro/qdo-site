@@ -21,8 +21,23 @@ export default function Home() {
             flexDirection: { xs: "column", md: "row-reverse" },
           }}
         >
-          <Box sx={{ position: "relative", height: { xs: "200px", sm: "50vh" }, width: { xs: "200px", sm:"300px" }, transitionDuration:"1000ms", transitionProperty:"height, weight" }}>
-            <Image src={sapling} fill  style={{ objectFit:"contain" }} alt="revival" placeholder="blur" loading="lazy" />
+          <Box
+            sx={{
+              position: "relative",
+              height: { xs: "200px", sm: "50vh" },
+              width: { xs: "200px", sm: "300px" },
+              transitionDuration: "1000ms",
+              transitionProperty: "height, weight",
+            }}
+          >
+            <Image
+              src={sapling}
+              fill
+              style={{ objectFit: "contain" }}
+              alt="revival"
+              placeholder="blur"
+              loading="lazy"
+            />
           </Box>
           <Box maxWidth={{ xs: "75%", md: "50%" }} sx={{ paddingY: 2 }}>
             <Typography variant="h4" align="center">
@@ -48,8 +63,16 @@ export default function Home() {
             flexDirection: { xs: "column", md: "row" },
           }}
         >
-          <Box sx={{ position: "relative", height: { xs: "300px", sm: "74vh" }, width: { xs: "200px", sm:"300px" }, transitionDuration:"1000ms", transitionProperty:"height, weight" }}>
-            <Image src={funny} fill style={{ objectFit:"contain" }}  alt="qdo" placeholder="blur" loading="lazy" />
+          <Box
+            sx={{
+              position: "relative",
+              height: { xs: "300px", sm: "74vh" },
+              width: { xs: "200px", sm: "300px" },
+              transitionDuration: "1000ms",
+              transitionProperty: "height, weight",
+            }}
+          >
+            <Image src={funny} fill style={{ objectFit: "contain" }} alt="qdo" placeholder="blur" loading="lazy" />
           </Box>
           <Box maxWidth={{ xs: "75%", md: "50%" }} sx={{ paddingY: 2 }}>
             <Typography variant="h4" align="center">
