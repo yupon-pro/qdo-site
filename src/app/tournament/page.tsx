@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 const routes = [
-  { nav: "Registration", image: "writing" },
+  { nav: "Registration", image: "writing", description: "Phase 1 has already started." },
   { nav: "Visit", image: "travel_woman", description: "You can arrive the university via train or plane." },
   { nav: "Schedule", image: "antique_clock" },
 ];

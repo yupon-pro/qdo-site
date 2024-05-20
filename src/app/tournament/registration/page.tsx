@@ -58,7 +58,7 @@ export default function Home() {
           <Typography variant="subtitle1" fontWeight="bolder" sx={{ padding:"10px 0px 5px 0px "}} >
           【Deadline is 23:59 8th June】
           </Typography>
-          <BodyTypography nonBold="normal" sx={ bodyTypoSx } >
+          <BodyTypography nonBold="normal" sx={{ ...bodyTypoSx, wordBreak:"break-word" }} >
             Please submit the following application form and let us know by email after you send the form. 
             <br /> 
             kyushu.debate.open.since2014@gmail.com 
@@ -75,13 +75,13 @@ export default function Home() {
           <BodyTypography nonBold="normal" sx={ bodyTypoSx } >
             For Independent Adjudicator: (your name)
           </BodyTypography>
-          <BodyTypography nonBold="normal" sx={{...bodyTypoSx, whiteSpace:"pre-wrap"}} >
+          <BodyTypography nonBold="normal" sx={{...bodyTypoSx, whiteSpace:"pre-wrap", wordBreak:"break-word"}} >
             {`- Team: \n  https://forms.gle/SRTuLU41X8PDeiSLA`}
           </BodyTypography>
-          <BodyTypography nonBold="normal" sx={{...bodyTypoSx, whiteSpace:"pre-wrap"}} >
+          <BodyTypography nonBold="normal" sx={{...bodyTypoSx, whiteSpace:"pre-wrap", wordBreak:"break-word"}} >
             {`- Junior and Senior High school students' team: \n  https://forms.gle/QAMj83uVVMR8Lw6s5`}
           </BodyTypography>
-          <BodyTypography nonBold="normal" sx={{...bodyTypoSx, whiteSpace:"pre-wrap"}} >
+          <BodyTypography nonBold="normal" sx={{...bodyTypoSx, whiteSpace:"pre-wrap", wordBreak:"break-word"}} >
             {`- Independent adjudicator: \n  https://forms.gle/4end8zCtE6Gd67XA8`}
           </BodyTypography>
           <BodyTypography nonBold="normal" sx={ bodyTypoSx } >
