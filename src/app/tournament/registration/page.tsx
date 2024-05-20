@@ -76,13 +76,13 @@ export default function Home() {
             For Independent Adjudicator: (your name)
           </BodyTypography>
           <BodyTypography nonBold="normal" sx={{...bodyTypoSx, whiteSpace:"pre-wrap", wordBreak:"break-word"}} >
-            {`- Team: \n  https://forms.gle/SRTuLU41X8PDeiSLA`}
+            {`- Team: \n  https://forms.gle/SRTuLU41X8PDeiSLA \n`}
           </BodyTypography>
           <BodyTypography nonBold="normal" sx={{...bodyTypoSx, whiteSpace:"pre-wrap", wordBreak:"break-word"}} >
-            {`- Junior and Senior High school students' team: \n  https://forms.gle/QAMj83uVVMR8Lw6s5`}
+            {`- Junior and Senior High school students' team: \n  https://forms.gle/QAMj83uVVMR8Lw6s5 \n`}
           </BodyTypography>
           <BodyTypography nonBold="normal" sx={{...bodyTypoSx, whiteSpace:"pre-wrap", wordBreak:"break-word"}} >
-            {`- Independent adjudicator: \n  https://forms.gle/4end8zCtE6Gd67XA8`}
+            {`- Independent adjudicator: \n  https://forms.gle/4end8zCtE6Gd67XA8 \n`}
           </BodyTypography>
           <BodyTypography nonBold="normal" sx={ bodyTypoSx } >
             *We accept teams by the first come first served principle if we get more applications than the limit of the slots for high school students.
