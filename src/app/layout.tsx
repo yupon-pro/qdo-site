@@ -19,10 +19,10 @@ export const metadata: Metadata = {
   description: description,
   openGraph: {
     type: "website",
-    siteName: "Kyushu Debate Open 2024 Official Site",
+    siteName: "QDO 2024",
     title: "QDO 2024",
     description: description,
-    images: [{ url: "https://kyushu-debate-open-2024.vercel.app/opengraph-image.png", width: 1920, height: 906 }],
+    images: "https://kyushu-debate-open-2024.vercel.app/opengraph-image.png",
   },
 };
 
@@ -53,8 +53,8 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "WebPage",
-              name: "Kyushu Debate Open 2024 - QDO 2024",
+              "@type": "WebSite",
+              name: "QDO 2024",
               image: "https://kyushu-debate-open-2024.vercel.app/icon.ico",
               description: description,
             }),
