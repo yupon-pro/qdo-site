@@ -23,11 +23,12 @@ export default function SubNav() {
   const { navHeight } = useNavHeight();
   const pathname = usePathname();
   const flagAboutPage = pathname.includes("about");
+  const isAboutQDO = pathname.endsWith("about");
   const flagTournamentPage = pathname.includes("tournament");
   const pages = flagAboutPage ? aboutPages : flagTournamentPage ? tournamentPages : undefined;
 
   useEffect(() => {
-    if (pages == undefined) return;
+    isAboutQDO && setValue(0);
     return () => {
       setValue(false);
     };
