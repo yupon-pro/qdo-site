@@ -26,7 +26,7 @@ import { Fragment, useEffect, useRef, useState } from "react";
 const drawerWidth = 200;
 const navItems = ["About", "Staff", "Partners", "Tournament", "Contact"];
 
-export default function DrawerAppBar() {
+export default function Header() {
   const matches = useMediaQuery("(max-width:595px)");
   const anyHover = useMediaQuery("(any-hover:hover)");
   const ref = useRef<HTMLHeadElement>(null);
