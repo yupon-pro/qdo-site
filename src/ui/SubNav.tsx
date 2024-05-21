@@ -38,7 +38,7 @@ export default function SubNav() {
         : tournamentPages.map((page) => page[1]).includes(lastRoute)
           ? tournamentPages.forEach((page, index) => pathname.endsWith(page[1]) && setValue(index))
           : setValue(false);
-  }, [isAboutQDO, flagAboutPage, flagTournamentPage, pathname]);
+  }, [isAboutQDO, pathname]);
 
   if (pages == undefined) return null;
 
