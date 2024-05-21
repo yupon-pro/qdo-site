@@ -26,13 +26,14 @@ export default function SubNav() {
   const isAboutQDO = pathname.endsWith("about");
   const flagTournamentPage = pathname.includes("tournament");
   const pages = flagAboutPage ? aboutPages : flagTournamentPage ? tournamentPages : undefined;
+  const flag = flagAboutPage ? "about" : flagTournamentPage ? "tournament" : undefined;
 
   useEffect(() => {
     isAboutQDO && setValue(0);
     return () => {
       setValue(false);
     };
-  }, [pages]);
+  }, [flag]);
 
   if (pages == undefined) return null;
 
