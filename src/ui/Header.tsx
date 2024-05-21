@@ -34,7 +34,7 @@ export default function DrawerAppBar() {
 
   useEffect(() => {
     const height = ref.current?.offsetHeight;
-    setNavHeight((prev) => (height ? height : prev));
+    setNavHeight((prev) => (height || prev));
   }, [matches]);
 
   const [mobileOpen, setMobileOpen] = useState(false);
