@@ -21,7 +21,7 @@ import {
 import Link from "next/link";
 import { hoverUnderline } from "./Component/Props";
 import { useNavHeight } from "./ContextProvider";
-import { useEffect, useRef, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 
 const drawerWidth = 200;
 const navItems = ["About", "Staff", "Partners", "Tournament", "Contact"];
@@ -66,9 +66,9 @@ export default function DrawerAppBar() {
   );
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <Fragment>
       <CssBaseline />
-      <AppBar style={{ backgroundColor: "steelblue" }} component="nav" ref={ref}>
+      <AppBar position="fixed" style={{ backgroundColor: "steelblue" }} component="nav" ref={ref}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -120,6 +120,6 @@ export default function DrawerAppBar() {
           {drawer}
         </Drawer>
       </nav>
-    </Box>
+    </Fragment>
   );
 }
