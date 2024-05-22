@@ -1,6 +1,6 @@
 "use client";
 
-import { ReactElement, useRef } from "react";
+import { ReactElement, } from "react";
 import { motion } from "framer-motion";
 
 export default function FadeIn({ children }: { children: ReactElement }) {

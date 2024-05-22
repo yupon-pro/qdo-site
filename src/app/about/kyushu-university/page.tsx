@@ -44,7 +44,7 @@ export default function Home() {
           <BodyTypography>
             IThe to campus of Kyushu University is one of the most largest universities with well-equipped laboratories
             and study rooms. Its state-of-the-art facilities and resources provide students with unparalleled
-            opportunities for academic and personal growth. In addition, Kyushu University{"'"}s is famous for its
+            opportunities for academic and personal growth. In addition, Kyushu University is famous for its
             Central Library which is one of the largest libraries in colleges. It has a large number of books ranging
             from academic to practical. It has many desks for students to study quietly. If students have questions
             about their assignments and lectures, they can access to the student support service in the library. The

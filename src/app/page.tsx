@@ -85,7 +85,7 @@ export default function Home() {
               future {'"'}global citizens.{'"'}
               As Japan{"'"}s oldest international BP-style debate tournament, QDO facilitates Japanese debaters{"'"}{" "}
               exposure to and learning from international tournaments. Renowned overseas debaters are invited to serve
-              as adjudication core (AC) and provide lectures, enriching participants{"'"} debating abilities. QDO also
+              as adjudication core (AC), enriching participants{"'"} debating abilities. QDO also
               promotes the Kyushu region, offering information about Fukuoka city, and collaborates with Kyushu
               University to enhance the event{"'"}s quality.
             </BodyTypography>
