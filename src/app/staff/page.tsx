@@ -16,6 +16,7 @@ const staff = [
   { name: "Mami Matsuse", role: "AC" },
   { name: "Minami Matsushima", role: "AC" },
   { name: "Kotaro Yoshida", role: "AC" },
+  { name: "Luigi Alcaneses", role: "CAP" },
   { name: "Atsuhiro Nishiyama", role: "CD" },
   { name: "Keigo Kawabata", role: "CD・MD" },
   { name: "Karin Minowa", role: "TC・MD" },
