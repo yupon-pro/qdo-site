@@ -13,9 +13,9 @@ export const metadata: Metadata = {
 const staff = [
   { name: "Reona Ishizuka", role: "TD" },
   { name: "Hina Namisaki", role: "VTD" },
-  { name: "Mami Matsuse", role: "AC" },
-  { name: "Minami Matsushima", role: "AC" },
-  { name: "Kotaro Yoshida", role: "AC" },
+  { name: "Mami Matsuse", role: "CAP" },
+  { name: "Minami Matsushima", role: "CAP" },
+  { name: "Kotaro Yoshida", role: "CAP" },
   { name: "Luigi Alcaneses", role: "CAP" },
   { name: "Atsuhiro Nishiyama", role: "CD" },
   { name: "Keigo Kawabata", role: "CD・MD" },
