@@ -41,11 +41,6 @@ export default function Footer() {
       </Box>
       <Box sx={{ display: "flex", flexDirection: "column", minHeight: "50%", minWidth: "25%" }}>
         <Box sx={{ display: "flex", justifyContent: "space-evenly" }}>
-          <FooterTooltip title="x">
-            <IconButton>
-              <X fontSize="large" />
-            </IconButton>
-          </FooterTooltip>
           <FooterTooltip title="Facebook">
             <IconButton>
               <Link href="https://www.facebook.com/QDO.KyushuDebateOpen/?locale=ja_JP">
@@ -53,23 +48,9 @@ export default function Footer() {
               </Link>
             </IconButton>
           </FooterTooltip>
-          <FooterTooltip title="Instagram">
-            <IconButton>
-              <Instagram fontSize="large" />
-            </IconButton>
-          </FooterTooltip>
-          <FooterTooltip title="Line">
-            <IconButton>
-              <Chat fontSize="large" />
-            </IconButton>
-          </FooterTooltip>
-          {/* 
-						カスタムbabelを使う方法だと、Next/fontのコンパイルが衝突する 
-						https://nishinatoshiharu.com/next-svg/
-					*/}
         </Box>
         <Box sx={{ textAlign: "center" }}>
-          <Typography variant="caption">©2024 Ksyushu University Debate Society</Typography>
+          <Typography variant="caption">©2024 Kyushu University Debate Society</Typography>
         </Box>
       </Box>
     </Container>

@@ -5,7 +5,9 @@ import { Box, Container, Grid, Stack, Typography } from "@mui/material";
 
 export default function Home() {
   const sponsors: Partner[] = [];
-  const supporters: Partner[] = [];
+  const supporters: Partner[] = [
+    {name:"文部科学省", image:"/partners/supporters/EduSciAgency.jpg"}
+  ];
 
   if (!sponsors.length || !supporters.length) {
     return <UnderConstruction />;
