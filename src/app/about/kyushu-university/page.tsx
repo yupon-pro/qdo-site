@@ -42,7 +42,7 @@ export default function Home() {
           </BodyTypography>
           <BodySubtitle boxSx={{ marginY: 3 }}>Facilities & Program</BodySubtitle>
           <BodyTypography>
-            IThe to campus of Kyushu University is one of the most largest universities with well-equipped laboratories
+            Ito campus of Kyushu University is one of the most largest universities with well-equipped laboratories
             and study rooms. Its state-of-the-art facilities and resources provide students with unparalleled
             opportunities for academic and personal growth. In addition, Kyushu University is famous for its
             Central Library which is one of the largest libraries in colleges. It has a large number of books ranging
