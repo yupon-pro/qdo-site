@@ -1,4 +1,5 @@
 import BodyTypography from "@/ui/Component/CustomMui/BodyTypography";
+import ListableTable from "@/ui/Component/CustomMui/ListableTable";
 import { Box, Container, Stack, Typography } from "@mui/material";
 import { Fragment } from "react";
 
@@ -6,6 +7,8 @@ const bodyTypoSx = {
   width: { xs: "70vw", md: "60vw" },
   margin: 0,
 };
+
+const width = { width:bodyTypoSx.width };
 
 export default function Home() {
   return (
@@ -49,118 +52,75 @@ export default function Home() {
                   textAlign: "center",
                 }}
               >
-                Phase 1 Application
+                Application
               </Box>
             </Box>
           </Container>
           <Typography variant="subtitle1" fontWeight="bolder" sx={{ padding: "10px 0px 5px 0px " }}>
-            【Deadline is 23:59 8th June】
+          【Deadline is 23:59 6th July】
           </Typography>
           <BodyTypography nonBold="normal" sx={{ ...bodyTypoSx, wordBreak: "break-word" }}>
-            Please submit the following application form and let us know by email after you send the form.
-            <br />
-            kyushu.debate.open.since2014@gmail.com
+            We will send you the confirmation email after you send the form. In case you do not receive the email within 3 workdays after your submission, please contact us.
+          </BodyTypography>          
+          <BodyTypography nonBold="normal" sx={{ ...bodyTypoSx, wordBreak: "break-word" }}>
+            {`- For Teams' representatives: \n  https://forms.gle/ybW7mUSevLvHpGkDA \n`}
           </BodyTypography>
-          <BodyTypography nonBold="normal" sx={bodyTypoSx}>
-            We send Phase2 information after your submission and email are confirmed.
-          </BodyTypography>
-          <BodyTypography nonBold="normal" sx={bodyTypoSx}>
-            *Please specify following information in email
-          </BodyTypography>
-          <BodyTypography nonBold="normal" sx={bodyTypoSx}>
-            For Representative: (name of representative) (institution)
-          </BodyTypography>
-          <BodyTypography nonBold="normal" sx={bodyTypoSx}>
-            For Independent Adjudicator: (your name)
-          </BodyTypography>
-          <BodyTypography nonBold="normal" sx={{ ...bodyTypoSx, whiteSpace: "pre-wrap", wordBreak: "break-word" }}>
-            {`- Team: \n  https://forms.gle/SRTuLU41X8PDeiSLA \n`}
-          </BodyTypography>
-          <BodyTypography nonBold="normal" sx={{ ...bodyTypoSx, whiteSpace: "pre-wrap", wordBreak: "break-word" }}>
-            {`- Junior and Senior High school students' team: \n  https://forms.gle/QAMj83uVVMR8Lw6s5 \n`}
-          </BodyTypography>
-          <BodyTypography nonBold="normal" sx={{ ...bodyTypoSx, whiteSpace: "pre-wrap", wordBreak: "break-word" }}>
-            {`- Independent adjudicator: \n  https://forms.gle/4end8zCtE6Gd67XA8 \n`}
-          </BodyTypography>
-          <BodyTypography nonBold="normal" sx={bodyTypoSx}>
-            *We accept teams by the first come first served principle if we get more applications than the limit of the
-            slots for high school students.
-          </BodyTypography>
-          <BodyTypography nonBold="normal" sx={bodyTypoSx}>
-            *For participation in our tournament, you need to submit the disclaimer sheet of this tournament with your
-            parent{"'"}s signature by PDF.
-          </BodyTypography>
-        </Stack>
-        <Stack spacing={1} alignItems="center">
-          <Container
-            maxWidth="md"
-            sx={{
-              backgroundImage: "url('/tournament/payment.jpeg')",
-              backgroundSize: { xs: "95%", sm: "80%", md: "60%" },
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-              backgroundColor: "transparent",
-              transitionDuration: "1000ms",
-              height: { xs: "40vh", sm: "45vh", md: "55vh" },
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              transitionProperty: "height, background-size",
-            }}
-          >
-            <Box
-              sx={{
-                width: "60%",
-                height: "55%",
-                paddingX: 1,
-                backgroundColor: "rgba(200,200,200,0.9)",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <Box
-                sx={{
-                  typography: { xs: "h5", sm: "h4", lg: "h3" },
-                  transitionDuration: "1000ms",
-                  transitionProperty: "font-size",
-                  textAlign: "center",
-                }}
-              >
-                Phase 2 Scheduled Fee
-              </Box>
-            </Box>
-          </Container>
-          <Typography variant="subtitle1" fontWeight="bolder" sx={{ padding: "10px 0px 5px 0px" }}>
-            【Deadline is scheduled for 22th June】
+          <Typography variant="subtitle1" fontWeight="bolder" sx={{ padding: "10px 0px 5px 0px " }}>
+          【Payment】
           </Typography>
-          <BodyTypography nonBold="normal" sx={bodyTypoSx}>
-            Please follow the procedure written in our email and pay registration fee.
+          <BodyTypography nonBold="normal" sx={{ ...bodyTypoSx, wordBreak: "break-word" }}>
+            Debater (per person): 15000 JPY
+            <br />
+            Independent adjudicator: 10000JPY
+            <br />
+            Junior and Senior High school students{"'"} team (per person): 5000 JPY
           </BodyTypography>
-          <BodyTypography nonBold="normal" sx={bodyTypoSx}>
-            *We will send Phase2 messages to those who complete Phase1 registration of QDO 2024.
+          <BodyTypography nonBold="normal" sx={{ ...bodyTypoSx, wordBreak: "break-word" }}>
+            *Please note, for this Kyushu Debate Open, 
+            the person in charge will send an email with payment instructions to those who have submitted a participation form for Phase 2, 
+            and those who have received the email are requested to complete payment by the specified date.
+          </BodyTypography>  
+          <Typography variant="subtitle1" fontWeight="bolder" sx={{ padding: "10px 0px 5px 0px " }}>
+          【Cancellation Policy】
+          </Typography>
+          <BodyTypography nonBold="normal" sx={{ ...bodyTypoSx, wordBreak: "break-word" }}>
+            If you do not finish the payment by the deadline (July 6th), your team{"'"}s/adjudicator{"'"}s slot will automatically be dropped. 
+            Please make sure not to miss the payment period, and inform us in advance if you cannot keep the deadline.
+            Please also note that the money you paid won{"'"}t be refunded after payment.
           </BodyTypography>
-          <BodyTypography nonBold="normal" sx={bodyTypoSx}>
-            Please make sure to pay money by no later than【22th June】.
-          </BodyTypography>
-          <BodyTypography nonBold="normal" sx={bodyTypoSx}>
-            *If we cannot confirm your payment by the deadline, those teams{"'"} applications would be automatically
-            canceled. Make sure not to miss the deadline, and let us know in advance if you have some reasons you cannot
-            pay money by the deadline.
-          </BodyTypography>
-          <BodyTypography nonBold="normal" sx={bodyTypoSx}>
-            *In case you cancel participation after you pay the registration fee, we cannot refund it. It is very
-            important to run a tournament, thank you for your understanding and cooperation.
-          </BodyTypography>
-          <BodyTypography nonBold="normal" sx={{ ...bodyTypoSx, whiteSpace: "pre-wrap" }}>
-            {`- Debater (per person): \n 15000 JPY(tentative)`}
-          </BodyTypography>
-          <BodyTypography nonBold="normal" sx={{ ...bodyTypoSx, whiteSpace: "pre-wrap" }}>
-            {`- Junior and Senior High school students' team (per person): \n 5000 JPY(tentative)`}
-          </BodyTypography>
-          <BodyTypography nonBold="normal" sx={{ ...bodyTypoSx, whiteSpace: "pre-wrap" }}>
-            {`- Independent adjudicator: \n 10000JPY(tentative)`}
-          </BodyTypography>
+          <Typography variant="subtitle1" fontWeight="bolder" sx={{ padding: "10px 0px 5px 0px " }}>
+          【Categories】
+          </Typography>
+          <ListableTable 
+            title={{ body: "Open Speaker" }}
+            description={{ body: "All the debaters who do not apply to the eligibility below." }}
+            size={width}
+          />
+          <ListableTable 
+            title={{ body: "Novice Speaker eligibility"}}
+            description={{ body: "No experience breaking in the open category at any domestic/international open tournaments (novice tournaments or Pro-Am competitions excluded)", sx:{ wordBreak:"break-word" } }}
+            caution={{ body: [
+              "*You are still a novice speaker if you broke in the Novice/Rookie category of an open tournament",
+              "*You are not a novice speaker if you broke in the ESL/EFL category at majors (WUDC, UADC, ABP, EUDC) and NEADC",
+              "*You are a schools speaker if you are a junior high/high school student regardless of your experience or achievements",
+            ] }}
+            size={width}
+          />
+          <ListableTable 
+            title={{ body: "Schools Speaker eligibility" }}
+            description={{ body: "Junior high/high school students."  }}
+            size={width}
+          />
+          <ListableTable 
+            title={{ body: "Novice Team eligibility" }}
+            description={{ body: "All three speakers must be Novice Speakers." }}
+            size={width}
+          />
+          <ListableTable 
+            title={{ body: "Schools team eligibility" }}
+            description={{ body: "All three speakers must be Schools Speakers." }}
+            size={width}
+          />
         </Stack>
       </Stack>
     </Fragment>
