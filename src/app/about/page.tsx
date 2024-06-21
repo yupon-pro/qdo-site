@@ -85,6 +85,7 @@ export default function Home() {
             4. You do NOT have to bring adjudicators. 
             <br />
             5. The venue is the Ito campus in Kyushu University. Please check the location.
+            <br />
             <ArrowButton url="/tournament/visit" text="Access" />
           </BodyTypography>
           <BodySubtitle boxSx={{ marginY: 3 }}>No Lecture & No Online</BodySubtitle>
