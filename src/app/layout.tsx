@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     siteName: "QDO 2024",
     title: "QDO 2024",
     description: description,
-    images: "https://kyushu-debate-open-2024.vercel.app/opengraph-image.png",
+    images: "/opengraph-image.png",
   },
 };
 

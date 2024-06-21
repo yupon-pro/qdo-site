@@ -1,4 +1,5 @@
 import QDOGallery from "@/ui/About/QDOGallery";
+import ArrowButton from "@/ui/Component/CustomMui/ArrowButton";
 import BodySubtitle from "@/ui/Component/CustomMui/BodySubtitle";
 import BodyTypography from "@/ui/Component/CustomMui/BodyTypography";
 import { Box, Container, Stack, Typography } from "@mui/material";
@@ -72,6 +73,19 @@ export default function Home() {
             significant role, akin to other major debate tournaments, in cultivating individual debating skills. Its
             impact extends to various stakeholders such as Kyushu University, Fukuoka Prefecture, and the wider regional
             society.
+          </BodyTypography>
+          <BodySubtitle boxSx={{ marginY: 3 }}>Tournament Overview</BodySubtitle>
+          <BodyTypography>
+            1. Format is British Parliamentary.
+            <br />
+            2. This tournament will be held in 17th August (Sat) and 18th August (Sun). Please note that the registration will start from 9:00 AM 
+            <br />
+            3. This tournament is open for anyone from junior high school students to senior debaters.
+            <br />
+            4. You do NOT have to bring adjudicators. 
+            <br />
+            5. The venue is the Ito campus in Kyushu University. Please check the location.
+            <ArrowButton url="/tournament/visit" text="Access" />
           </BodyTypography>
           <BodySubtitle boxSx={{ marginY: 3 }}>No Lecture & No Online</BodySubtitle>
           <BodyTypography>
