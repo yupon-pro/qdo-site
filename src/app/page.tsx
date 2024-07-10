@@ -46,7 +46,7 @@ export default function Home() {
             <BodyTypography>
               The Kyushu Debate Open (QDO) was suspended for four years due to the prevailing coronavirus situation in
               Japan. With restrictions concerning COVID-19 lifted, many events at Kyushu University have recently
-              resumed, including ours. As this marks the first QDO event in four years, there are notable differences
+              resumed, including ours. As this marks the first QDO event in four years, there are several differences
               compared to past competitions. We have developed this website to announce the restart of QDO and to inform
               you about the slight changes in style. If you wish to review past events, please click the following
               button.
