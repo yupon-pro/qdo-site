@@ -7,7 +7,7 @@ export default function ImageCard({ partner }: { partner: Partner }) {
   const ref = partner.ref
   const image = name.split(" ").map(word => {
     const letters = word.split("")
-    letters[0].toUpperCase()
+    letters[0] = letters[0].toUpperCase()
     return letters.join("")
   }).join("")
 
