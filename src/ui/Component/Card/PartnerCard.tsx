@@ -1,17 +1,31 @@
 import { Partner } from "@/lib/Definition";
-import { Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/material";
+import { Avatar, Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/material";
+import Link from "next/link";
 
 export default function ImageCard({ partner }: { partner: Partner }) {
+  const name = partner.name
+  const ref = partner.ref
+  const image = name.split(" ").map(word => {
+    const letters = word.split("")
+    letters[0].toUpperCase()
+    return letters.join("")
+  }).join("")
+
   return (
-    <Card sx={{ maxWidth: 345 }} elevation={3} >
+    <Card square={false} elevation={5} >
       <CardActionArea>
-        <CardMedia component="img" height="140" image={partner.image} alt={partner.name} />
-        <CardContent>
-          <Typography gutterBottom variant="subtitle1" component="div">
-            {partner.name}
-          </Typography>
-        </CardContent>
+        <Link href={ref} >
+          <CardMedia sx={{ display: "flex", justifyContent: "center" }}>
+            <Avatar src={`partners/${image}.png`} alt={name} sx={{ width: 200, height: 200 }} />
+          </CardMedia>
+          <CardContent>
+            <Typography gutterBottom align="center" variant="h5" component="div">
+              {name}
+            </Typography>
+          </CardContent>
+        </Link>
       </CardActionArea>
     </Card>
   );
 }
+

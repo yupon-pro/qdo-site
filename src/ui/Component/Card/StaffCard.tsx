@@ -1,6 +1,5 @@
 import { Staff } from "@/lib/Definition";
 import { Avatar, Card, CardContent, CardMedia, Typography } from "@mui/material";
-import Image from "next/image";
 
 export default function StaffCard({ staff }: { staff: Staff }) {
   return (

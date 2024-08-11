@@ -1,9 +1,11 @@
 export type Partner = {
   name: string;
-  image: string;
+  ref: string;
 };
 
-export type Staff = Partner & {
+export type Staff = {
+  image: string;
+  name: string;
   role: string;
 };
 
