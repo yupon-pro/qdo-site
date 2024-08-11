@@ -1,8 +1,6 @@
 import BodySubtitle from "@/ui/Component/CustomMui/BodySubtitle";
 import BodyTypography from "@/ui/Component/CustomMui/BodyTypography";
-import Preparation from "@/ui/Preparation";
-import { Box, Container, Stack, Typography } from "@mui/material";
-import { Fragment } from "react";
+import { Container, Stack, Typography } from "@mui/material";
 
 export default function Home() {
   return (
