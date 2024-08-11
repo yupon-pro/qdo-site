@@ -13,7 +13,7 @@ export default function Home() {
     { name: "Fukuoka Prefecture", ref: "https://www.pref.fukuoka.lg.jp/" },
     { name: "Fukuoka City", ref: "https://www.city.fukuoka.lg.jp/index.html" },
   ];
-  console.log(supporters)
+
   return (
     <Stack spacing={10} sx={{ paddingY: 8 }}>
       <Typography align="center" variant="h2">

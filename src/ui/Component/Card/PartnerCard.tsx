@@ -10,7 +10,6 @@ export default function ImageCard({ partner }: { partner: Partner }) {
     letters[0].toUpperCase()
     return letters.join("")
   }).join("")
-  console.log(image)
 
   return (
     <Card square={false} elevation={5} >
