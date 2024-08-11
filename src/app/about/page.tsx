@@ -78,7 +78,7 @@ export default function Home() {
           <BodyTypography>
             1. Format is British Parliamentary.
             <br />
-            2. This tournament will be held in 17th August (Sat) and 18th August (Sun). Please note that the registration will start from 9:00 AM 
+            2. This tournament will be held in 17th August and 18th August. Please note that the registration will start from 9:00 AM 
             <br />
             3. This tournament is open for anyone from junior high school students to senior debaters.
             <br />
